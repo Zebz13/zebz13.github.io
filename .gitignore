@@ -17,3 +17,6 @@
 !public/**/*
 !.github
 !.github/**/*
+!flake.nix
+!flake.lock
+!.envrc
