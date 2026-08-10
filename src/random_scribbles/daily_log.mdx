@@ -1,57 +1,412 @@
 Mostly keeping this as a placeholder - probably unfiltered (note: probably got some undiagnosed mental issues)
 
-march 30
-* God i learnt about insta subscriptions - OF but for soft content? mostly surprised that peeps are paying for it.
-Maybe desensitivation isn't the answer. On the bright side some folks are making bank off it.
-While some others realize they're not cut out for it and quit (now you're broke and need therapy)
-* learnt about emi situation for folks in GCC  - basically high EMI before the war and now you're basically at sunken cost fallacy?
-* daily prayer is not helping mental health lol - but maybe it takes time - or the head is fucked like this forever.
-* need to figure out dpdp + how data is handled currently - and as always - how much of it will actually be kept proper
+August 10
+* Cleaned up work code - but realized I got a lot left to clean up - which is kinda good? Feeding the context is the annoying part but it is what it is. At least I'm able to steam roll through the work.
+* Wondering if a sglang or vllm based setup with loca ocr would be better for parsing which images/videos to keep - videos will  be tricky since I'll have to strip it into keys frames. I do wonder if the same setup can be used for pdfs as well - since it's basically OCR.
+* Got an itchy/puffy eye(wonder if it's from some infection) so it's hard to read stuff now and given I don't have a monitor here it's a bit annoying as of now.
+* Need to learn a bit about llm inference - mostly the KV cache growth. I do wonder if you have weights you can switch the cache between models. Even if between models doesn't work, between quantization should definitely work - but given it's the KV cache which doubles with every token generation - need to actually optimize for that.
 
-march 31
-* Realizing that once I get the stuff - the ideas drain out. Got a VPS and now I can't seem to focus or find a drive for anything.
-This do be strange - but I don't know what to do lol. Maybe some data collection? but gotta do web scraping again.
-* gotta look into terraform based deployments into VPS
+August 9
+* Need a bit more impulse control - currently X/Reddit are like attention sinks - should be doable to to handle those. For Reddit - it's mostly morbid curiosity and for X - it's mostly searching for news which interests me | maybe like market analysis or Memory prices etc; But the thing which I've noticed is that within 5min I get most of the content I require - rest is just spam. Reddit is a bit weird - without a specific search - the bots can slowly feed on your emotions lol
+* Reading or learning a single topic is getting a bit hard - especially when you don't know that specific topic. I guess proper planning/path finding needs to be taken a bit more seriously - got a lot to learn.
+* The nihilistic goblin is back again though - so it's been a bit hard - mostly the point of existence is uhhh questionable - but since I'm here might as well go the Sisyphus route.
 
-april 1
-* apparently life's a fucking joke
-* can't believe this shit took almost 1 day for setting up wireless extender on archer c6.
-steps: Basically you have source and relay (our C6). 
-1. Make source and relay settle on same channel width (40/80)
-2. Make source and relay use same channel (36)
-3. Make source and relay use same encryption pattern (WPA2-PSK)
-4. Disable EasyMesh on relay (C6).
-5. Set LAN IP of relay such that it's inside the x.x.x part of the ip.
-   Eg: If source is 192.168.1.1 and relay is at 192.168.0.1 change relay into 192.168.1.120 (any value from 2-254 
-   - as long as other devices in the network is not occupying this)
-6. WDS -> 2.4GHz vs 5GHz(choose only 1) -> Survey -> Select Source WIFI -> Type in Password -> Save
-7. Disable DHCP Server on Relay (C6)
-8. Profit? (all this circus just to get 50% of Access Point mode/wired extender)
+August 6
+* Regarding work - the PoC was completed pretty quick - should be gucci to finish it up today Might be able to push in UT framework as well cause my lazy ass definitely don't want to take SS.
+* Finally started using the vps for coding - but need to make the interface on phone better - termux is good for what it is, but ffs I don't  wanna type in terminal on the keyboard. Need to look into that a bit.
+* I feel like half the interfaces can be redesigned now - to an higher abstraction; I'm not a designer though + not enough trust on the matrix multiplication to be consistent when serving multiple people.
+* I do wonder if AI hate will shift if it's introduced as matrix multiplication - like we devised a new matrix multiplication method for calculating likely hood of the response distribution.
+* Also decided I won't struggle with modal editors - one gui + one terminal (micro) - should be enough. For terminal mux -> herdr is doing pretty fine as of now.
+* The certifications are pending - maybe after binging work I can switch to that. I do feel like binging on work is kinda eh - yeah I can do the full E2E setup for databricks + aws (VPCs are uhhhh) and set it up on Github Actions + Terraform; but it's not worth it imo - need to pick up design patterns for scaling. That's just vague, but lets say you create a program having 5 functions. If you have to add 3 functions later which needs to be invoked in each or cases like those. Also what all to decouple - so refactoring the code base will be easier. Oh well, couple of prompts away from learning.
+* 70% of the day was gone explaining stuff to folks + calls + story writing - thank god for enterprise llm made it a lot better - but damn these models need better context - currently I'm using a worklog and asking it to pick up from there - but it's not enough. If only the model can be trained while you're using but then personalized models would result in weights just for you - unless it's partitioned.
+* Time to learn flutter quick - llm literally making me catch up the stuff I've missed out lol - oh well no better time than now to learn everything I wanted.
+* Those certifications are pending though - need the claude pro + databricks pro + aws (refresher so any pro?) + google/azure (learning towards gcp) + terraform if possible
+* Also the urge to off is kinda low these days - gotta keep myself busy.
 
-* Also got some weird case of high latency for 5 ping(9000ms - 4000ms), then down to 10ms - I'm guessing power saving + radio sweep
+August 1
+* Wonder if I should add years to this - maybe I'll throw this into an archive with the year at the end.
+* I'm curious about the output distribution of LLMs - if I'm writing an LLM output analyzer, I'd be \ training on the output from latest llms - what if I write one which is retarded or trained on my data (both the same). Would it be in the distribution or would it be out of that? Same for images - if it's diffusion based, you'd be able to find the mathematical pattern from it - which can theoretically capture the change - god knows how much data you'll need though. Maybe something I can check on this pepega system.
+* Looks like I'm unskilled for the job market lol - well not surprised at all given credentials are shit. But that's also just an excuse cause I haven't done any of my personal projects. Time to at least give it a try
 
-* Is it normal to not feel like living? Cause what's even the point of this -> It's not like there is a grand purpose
-For those theological folks -> God sent us here to test us anyways | so why not just return back early?
+July 31
+* Blink and it's over - but it's literal
+* The work is pending - some part of it is cleared up - should be able to speedrun on monday/tuesday.
+* DeepSeek did pull through and it's just the flash version lol - gotta love that team. Got higher expectations for pro - I wonder how SSI will go as well - but yeah - it might be near september ig?
+* Hopefully I can use this weekend for some work? Need to figure out how I can do what synk does but for personal systems. I mean, just getting the version and space used should be good enough!
+* Man forgot to push after going to movie. Oh well it is what it is
 
-* at this point, getting fired might be better - zombie era might be over
+July 30
+* Planning to speedrun a lot of the setup today - I mean some parts are still not available for me but it is what it is.
+* Need to learn about prompt injection - dumbass me was thinking it was an artifact of training- but if they setup guardrails - how does it identify what is a guardrail or not - I meant updating weights to the direction of the query vector (except when it's using weights/vectors not designed) for that would work. And certain characters being OOD (out of distribution - memory too shit so I'll forget) would case the chain to happen. Reminds me of speedrunning in games - glitchy mechs.
+* Need to find apartments to switch - I'm barely making any money - how am I supposed this aaa Oh well, may the future folks have it easy
+* The urge to off is kinda staying sane - I'm guessing it's bidding it's time - which is a bit worrying? But I guess keeping myself busy + not lapsing into monkey business helps a bit - but the fear of not trying - that keeps on breathing down my neck - but what do I even do - I don't even have good ideas fml
 
-april 2
-* wonder wtf waits me here 
-* stored proc with merge into is bad when you're refilling columns by folding in middle. Just insert should be used.
-Fun problem tho - should be finished by tomorrow.
-* didn't do much other than work -> VDI is such a pita - how hard is to handle the latency lol
-* but yeah bare in would be 200ms but still - can't believe we can't go faster than light - yet
-* got a shit ton to clean up on obsidian dump repo + visualization there.
-* stocks monitoring - based on markets -> TODO | oh well another one which I won't be seeing anymore.
-* getting used to IEMs - gotta try tuning them maybe over the weekend
-* god i hate travel and pending travel over the weekend is already giving me headache
-* wouldn't mind if an AI wants to off me and take me as a shell lol
+July 29
+* Been sometime - and late as always - need to get stuff in order again - but yeah - returning from office is taking time - more like I'm getting late when returning - should be done in 3-4 more days - hopefully no more dependencies or blockers pending.
+* Doing certification first = end up coaching people for their cert - I don't wanna do it aaa more like I don't have much info which would be helpful other than binging the course+practice tests.
+* Purchases and the pending work on existing purchases are all piling up - no more purchases till I can finally start leveraging existing purchases - vps + other stuff. Exception would be kite
+* RAM prices won't be coming down any time soon - unless of course the servers start recycling earlier - then again - market pricing here is fucked for 2nd hand items lol
+* Kimi did open source their model and SSI might've picked up on continual learning - now when are they going to release their model - finally getting replaced would be fun. Talking about being replaced - mostly automating my work into individual skill file - but the main pain point is explaining - everytime - lets say I go over  databricks connections, cluster and other stuff and day after I explain snowflake. Now  when I ask it to link these it, I need to explain again or let it try it out again - at least on this part - voice is better of blabbering on to this. But yeah, it's like someone who keeps forgetting/not being able to connect multiple stuff. Don't get me wrong, it can do it if I leave it to it, but it fafo around a lot - which makes sense.
+* Need to start on that filesystem for vector soon - it's going to be pretty useful or myself lol.
 
-april 3
+July 17
+* It's been 1 month and still no progress. I do wonder why god is still keeping me here. Just take me off lol, at least the resources won't be wasted on me.
+* I don't have much passion or ambition in my life. I just wanna laze around, play games or do something which makes me happy. Maybe it's making a table, maybe it's pulling out weeds, maybe it's some random nerd snipe, maybe it's just making omelette. But given we all need money to survive here I am lol. Is life meaningful enough to live? Idk, I don't have any particular attachments as of now. I think I'll be fine leaving it today (but it has to from my expiry lol).
+* Anyways, best bet to live the lazy chill life is to automate whatever I don't like or make more money. But I don't particularly want to optimize for money? AI seems to be best bet, not cause of money, but cause it can automate and maybe give me a glimpse of the future I want lol. Oh well, if I can't reach it, maybe I can make it for the future me or people like me who wants that lazy life lol.
+* So my understanding on AI is extremely suferficial, but SGD is uhh questionable even for me. Maybe it's dunning kruger, but entire layer getting updated instead of just the weights which participate in activation is weird. ALso neural networks learn in time, while I  got no clue how brains learn. When I say learn in time- I mean like they have forward pass and backward pass (just for learning). Also learning a new fact does not update the general knowledge - it updates the specific fact based knowledge. Local minima - but that applies to my dumbass as well.
+* Anyways, once I get this part sorted, I'll have to hit robotics, maybe I can hit  it eariler if I can make some money for the 3D printer. Only way for us to have a chill life is to have a someone take care of the actual work (agriculture, cleaning, production etc) and what else is better than slaves, I meant robots. Now that said I think the Russians would know better since the Soviet Union was going for congitron at that point - probably got the name wrong but yeah.
+* But even during this time, biology cannot be left out. But yeah immortality if definitely not for me I want to expire as fast as possible but not by myself - cause that's gay. But yeah, changing your body like some random rpg character doesn't sound so bad - I meant trust would be at an all time low, but it's going to be fun lol.
+* Enough rambling for today - that cup noodles will get cold lol.
+* MFW I burnt my tongue from the noodles. Anyways gotta get started with something which gives me leverage. I'm not sure what that is, like I don't even know what I like - don't think I have anything which I like that much. But yeah, only way is fafo.
+* Now to figure out where to start.
+
+July 13
+* Going to office and back is draining lol - idek how people do this regularly - but I guess it depends on the salary as well? Anyways AC buses are soo good and we need more of it.
+* Error logs not being provided to the users inside VPCs is a bit eh. It's understandable given you wouldn't want a malicious actor to read the error logs to find a bypass instead of failures. Anyways, databricks-aws cloud provider error when creating a table is such a bitch.
+* Now I need to figure out how I'll get a tatkal for Friday evening back to Kerala lol. Or Saturday morning. Should be fine unless I get sick or something. Hopefully not but it's me we're talking about.
+* Need to look into that patent agent exam thing again. God knows when I can prepare for that. The pile of random motivation projects is increasing lol
+
+July 12
+* Back to office location again - gives me the depression or that low energy phase again. Hopefully  tomorrow will be better - can't do GPU competition - no way in hell am I writing 12k lines or launching 100+ experiments to figure out which are the hotpaths - most are llm powered. I don't have that shit. But what I'll do is pick it up from scratch ig - it's fun to understand it.
+* Gotta wake up early and try out zerodh. VPS can be used as the proxy/connector for static ip - maybe I can keep an IP logger for the current locatin's IP as well - to figure out if that's changing (maybe during power outage?)
+* Burning sensation in eye is there - not sure how it can to be - but yeah. It's a lot better than previous days so there's that.
+* Need to automate jira things in work - mostly for handling story updates-> code changes are from there. Also claude's code output if verbose + got a lot of unnecessary code. It's like it's optimising for loc like a metric lol - even test cases ig. Email part is still pending - need to setup that win32 snippet for that skill. Also computer use from basic OCR + pyautowin should be enough for standard tasks - maybe a skill should be fine. If I can couple this with a vector db, files and other details can be quickly searched up by the llms - mainly cause of grep or searches which does string/text search but miss due to semantics/context.
+* Also need to figure out how to make vacuum(low earth orbit) at low prices - maybe under 5k.
+* Battery setup for solar panel charge holding instead of sending it to the grid.
+
+July 10
+* Looks like I ended up making more frogs for my future self. Gotta love how I can F it up. Anyways car's backlight need replacement. Need to find time for fixing this.
+* Also that GPU comp is also pending. Need to sort out that part as soon as I can. Most of the things I want to complete are still there sadly. No clue on how or when I'll even be able to start those. Maybe I should monitor myself for the time spent.
+
+July 5
+* At home for most part - not getting much time after work since it's going a bit after that on consistency. Also cousins are also moving out/away - guess it's time for me to start working on something I want - this has been the same talk for years, but now with less people around it's finally hitting a bit hard? And I think I'm almost reaching the point where I can't do much.
+* Now I'm getting cold feet as I'm approaching the paste replacement on this laptop. Given the RAM prices if I mess up, it's going to be an expensive fix for sure.
+* Bathing in cold water is super annoying but it does give me enough sleepiness. So it evens out?
+* Need to finalize on an LLM subscription - or at least get a non shitty local qwen working properly. 4060m would run it ig maybe at 3-5 tk/s? Deepseek and GLM is the only hope lol - maybe once GPT's new model is released.
+* Got new samsung s6 monitor having KVM - man I need to check pricing before getting stuff - time to the life on earth as a game and start making money lol. The interesting stuff starts opening after you make that ig. All the fun stuff, let it be nuclear at home, homelab, 3d printing etc all of this requires money - a lot of money.
+* Lying to myself + day dreaming is becoming a depression hole again. I need to start my acceptance journey. If only it was as easy in the animes, you have some self talk and fix it. But for me it's literally trying to fake it (maybe faking it doesn't exist till I'm cured of it).
+* So the battery of the clock ran out and I thought I'd have to go out to get it. But I found a full pack of AAA battery. Fam told me that I had ordered this 6 months ago or something lol. Sometimes I love my past self. Maybe I should do stuff like this to my future self. Make it less painful. Oh well, time to eat the frogs.
+
+July 1
+* Did not get time for GPU Mode's QR Decomposition - now trying the Eigen Decomposition - but it's hard? At least I did not understand why eigen vectors were special when I had studied those in college lol, so yeah double the work - mostly for unerstanding how it doesn't rotate + acting as roots for the matrix.
+* Had 3 kittens at home - one got killed by car infront of me - dug up and buried. Suprised to see lack of emotions in me. I do wonder if I'm emotionally numb to protect myself lol. Anyways the other 2 kittens are no where to be found and that's a bit sad? I mean, their sibling got killed nearby so ig it makes sense?
+* The weed killing black sheets which I had suggested last year worked. But since we used random sheets it got effed by UV and rain - basically tropical fucks up most plastics. So now we got UV resistant sheets. Will see how they'll last - more work though now. Why aren't there some bots for weed plucking and drilling ground.
+* Completed the databricks gen ai cert - voucher was delayed a bit. Anyways, kinda straight forward except for maybe 15-20 questions from databricks specifics - which is also easy if you checked the course work. Anyways, is there a point in getting certifications in the age of LLMs? I mean for architecting you'd be using plan mode anyways - and the agents would be spun up for each cloud platform (even multicloud solutions), so is that even useful. I guess it's needed incase the LLMs are not that advanced or go inside the local minimum, anyways. Personally it feels like a waste, unless it's free + you're forced to do this from your company.
+* Repasting laptop is still pending - I'm a bit worried I can mess it up and end up with bad thermals + broken laptop lol. Also the current prices does not spark joy/confidence to take apart a 8 year old gaming laptop. Tbh, I'm surprised it lasted this long - did have display and fan replaced, but still, it's working on that 1060 gpu.
+* Gold and silver is coming down - probably due to rate hikes which might come this year. All the semi's do be printing money + capacity/production is low. Guess DDR5 or GPU production will be taking a hit for sometime. Best case scenario will be server cycle refresh which will be happening from the mid of next year - which should dump some extra stuff. Even then, hyperscalers will be buying those up to provide compute to run local models. For me though, I'm not even sure if the hardware will be experimented - since we do require hardware designed for software to test out new frameworks.
+
+June 22
+* GPU Mode competitions are interesting - only question is how long before I loose my interst. So far so good - but hitting math books is idk - tiring after being out of touch. LLMs do be helping here - but it can be simplified a whole lot. But yeah, LLM doesn't know my current base to build it on top of.
+* Also N is not stopping anytime soon. The neural pathways are hardwired - need to find escape routes or I'll just end up relapsing like always.
+* Since i haven't touched the tools a bit, just cleaning up some weed ended up with body pain the kinda sore which you get after first day of gym lol. But yeah it's a pretty good feeling, unlike something sprained or shit.
+* Oh well, another travel tomorow - gotta see how that goes.
+
+June 20
+* Back at home again - and the old feeling of being lagging behind is back - the past do be staring right into your eyes. The promises or the dreams which you've delayed around. Acceptance is super hard lol - I wish it'd be like some movie where I understand about it and idk fix it straight up. Oh well, maybe this life will continue as it is. Just as it goes on continuously.
+* Finding time and drive is another thing. Everything interests me at the same time I'm not pursuing anything seriously - it's like watching social media to be hooked into one thing. If I can do anything first would be to literally upgrade brain to understand material fast - then impulse control. Oh well, easier said that done. Sometimes I do think how bad it'll be if I had LLM weights instead of my brain - yeah can't think of anything unique or whatever and it's a token predictor - but it'll be better than whatever is this.
+* Weather contrast do be making you sweat - bodys' adaptability is surprising. PID can't tune this. How does it even regulate itself, it's not like the brain is sending signals everytime, they act themselves for certain items, for others yes, brain is needed.
+* I'm wondering why hasn't any mad scientist or someone tried AGI using a human brain as a base? I guess pumping oxygen and blood - purification and all of that would be tricky. Also extracting out a working brain do be hard - wonder if someone dies and their brain is restored- do the neurons/myelin sheath remain as it is. Do their memories fade away but with the same personality
+* Gotta check that esp32 which has been sitting ducks for sometime. Also blender, freecad aaaaa lot of things.
+* Maybe job is the issue? I mean, working on something unsatisfying for 50+ hours a week? May the future generations have it better than us lol - may pursual of interests be something that is doable compared to earning your bread from whatever that pays the bill. I mean how ironic that I am saying this - while I have all the possibilities to do exactly that.
+* I do wonder when we gonna finish up the caste/race/colour/country differences and start going full force on farming the universe. Would be fun to see that one day. But yeah, cultural differences do be huge. And without exploration or stepping out, you won't be introduced to other cultures which can expand your world view. And as the saying goes, changes comes when the old generation dies and new who's ingrained with different views takes their place lol
+
+June 18
+* Going back home after 2 months ig - need to sort out things with me first.
+* Realizing that I have no free-will or decision making skill sucks dick. Can't even decide on taking a half day or full day leave. Can't decide between if I should go out or stay in. How did even end up here at 27. God needs to stop making these mistakes.
+
+June 17
+* I still think I should've expired at 21 lol - it's been pretty downhill after that. But yeah, hated birthdays even before that. Nothing makes you feel more weirder than this day.
+* The mouse is actually pretty good to use - but inside the VDI, the doesn't function as intended. Screenshot and other things are not working, sometimes even backward and forward. I'm not sure if it's the VDI's security checks or something - not skilled enough to check that as of now.
+* Yeah went as expected. Maybe I'm not meant to exist, more like why do I exist - even if I die the people close to me will hurt a bit - but they'll recover | the world will continue - so what why am I still marching on with this life? Is there any meaning to this life? Even if a God exists does he care about me lol - given there are billions of others who work harder or pray harder. Why do I exist with a consciousness - not even gonna check the spelling on this one lol. Do wonder if couple of my neurons are gone, am I still the same me? What if another person with almost similar neuron structure exists - will our experiences be different cause of the memories? Would we be linked with such shitty life views? Anyways, this has been an useless blabber lol But yeah, humans probably optimize for neuron sync or gene sync - at least the groups will be formed based on that. Further optimizations in the group - I'm not sure.
+* I wonder how dehydrated and how much waste you have to process before getting kidney stones. Guess for some people it'll be pretty quick? Not something which I've looked into.
+* Was looking into seborric dermatitis - for conditions which can have multiple root causes, identifying the actual cause is annoying. Main thing is that you're doing ablation tests - but the results and the experiments have to be spaced over days. This time delay is super annoying + it's not like you're living in a vacuum tube to avoid other contaminations. If everyone has a tissue culture system at home for testing this out - experiments would've been fun. Maybe like, a machine where you scrape off some of your tissues -> grow the cells and pass in the possible scenarios one by one - ablation (from all possible issues) - test entire envs in parallel Sounds expensive af but maybe one day.
+* Overall should not have gone beyond 20-21 lol
+
+June 15
+* So during some work which I'm trying to focus, random ngmi kinda thoughts start surfacing - almost like it's trying to deviate me from the challenging work at hand - a weird escape mechanism tbh.
+* Databricks Cert is still pending cause vouchers are out - not like I'm ready for it but yeah. Also nix configurations are finally in git - so can nuke the system and it might come back as it was.
+* Need more money to fund my interests lol - being broke ain't fun at all.
+* Gemini CLI and antigravity is kinda good now that token management is centralized ig? It's kinda alright to use now - maybe I should enable the agentic workflow - but I need to learn
+* VPS and Zerodha do be staring right at my soul.
+* Also super tired after work - and super sleepy near 12. Usually it doesn't happen near 1-2. Guess body's taking a toll from pushing the previous days ig
+
+June 10
+* PROD went fine? I guess I never had failures or serious stuff like that so far - hopefully I don't jinx myself. Service Credential which can be binded to any workspace is like a risk waiting to be exploited lol. Stored Procedure handling needs to be setup - currently it ain't that good - also silently swallowing errors ain't helping.
+* Secret management for notebook based systems is annoying af - maybe I'll check an .env file for databricks workspaces - but yeah - pasting it into variable is a no go, putting it in databricks secrets is 404 cause enterprise?, storing it in env? not sure, we don't have secret manager access to fetch from there. Or even hcp vault for that matter. For local systems, .env works but how do you handle it in the case of agentic workflows. Not something which you'd trust after Fable lol - not like there was any trust from GPT2 but yeah!
+* Anyways our client is kinda good? since they have Claude enterprise access but did not enable Fable - 30 days data retention for enterprises is a huge no go obviously. I wonder who are the poor folks who basically went fafo.
+* Also stock market from phone is kinda eh? Sometime you can see how it'll go, other times you're missing a shit ton of data - at least on the derivative side. But yeah, no data -> gambling anyways.
+* Gold and silver do be tanking - is it due to US IPOs? I'm not sure. Also I'm baseless on the NPO vs CPO the optics based connectors used for Nvidia enterprise cards. Need to read more here.
+* Still remember the 9 rejections from CC applications lol - but yeah score is pretty good. Need to diversify and keep low credit varieties for increasing the score.
+* Also need to understand why I have this outer shell - it's perfect for colleagues and work folks but it's never coming off? Not sure if it's from the faking/compullsive lying nature which is inbuilt from fun childhood lol - but yeah - need to sort this out as well.
+* Workouts aint happening - need to start again. But yeah, daily walking do be helping out a ton here.
+
+June 9
+* Got that PROD Deployment and lot of work - sleep is not  taking a hit - mostly on high level it's sorted? And deadlines are a bit flexible since it's a migration nobody asked for ig.
+* Applied for the cert's voucher - do plan on binging it - currently using udemy practice tests - I do think any of the available ones will be fine.
+* VPS + Trading thing is pending - Also need to refresh my domain? God this is getting expensive.
+* Also RAM pricing + Processor stuff is not helping at all. I think the 550 + R9 5900x + DDR4 is my best bet. Might wait for 1 more for enterprise level refresh - which should push a lot of RAM out. I'd prefer if I can get 3090 or even a 4090 - but yeah currently a dream lol.
+* Virus based llms might be the only way to train on a global scale now - don't think anything else is gonna cut it for current market. But then how do you handle the memory or lock outs?
+
+June 7
+* mfw I forget to push this - oh well, it's not like nothing much happened. Just played some coop games.
+* E-Ink caught my interests now - mainly cause it can change colours - maybe that colour changing hair thing would be possible given the energy requirements are cheap - so if you can have some sort of heat->electricity no - not a fucking steam machine again - just a heat->electricity panel on the scalp - you can technically it.
+* Need to look into app development - only exp I got is basically MIT App Inventor - which is like the best stuff I've used - but yeah need to start looking.
+
+June 6
+* Almost 1 week - guess it was a bit hectic? so spamming 2 espresso works - but I get extremely sleepy for the first 1 hour - then go focused? I was not sure if I became focused cause of caffeine or if it was due to the interest in semi-conductor manufacturing - at least the high level working of fab. Charge trap for ssd and capacitor for ram was a fun read.
+* Also got to read a patent application for cmos image sensor - but godamnit it's so ass - might be worse than whatever I wrote in 12th, amplification but does not state how or the gain or how many cycles. Timing circuit but it's only half of the picture. On the bright side, learnt a bit about MOS Capacitors.
+* Also learnt why views are bad for spark - since it's recomputes stuff. Shitty views + mid queries on top =shitty performance + disk spill + shuffle write/read. Makes sense in retrospective. I'm more curious on how photon from databricks works - the joins+filters+scans did cut down the time tremendously.
+* Also that Databricks Cert is still pending - course is such a drag - maybe I should just binge it and do practice exams more. I guess certifications in general does not make sense you are not actively working in that field and it's like mugging up transformer manufacturing in a college. God I hated that shit.
+* Need to figure out how shitty headaches happen - I'm guessing it's due to bad sleep but yeah, need to find the quickest fix for that when it happens. I mean it's bearable but it's not like the normal pain which numbs down after some time cause the brain gets used to it?
+* Guess I'm typing a lot in the morning itself - which is surprising. I mean I didn't type nothing this past week.
+
+May 31
+* Found an interesting paper for today - https://arxiv.org/pdf/2605.28693 | Looks like the learning logic in the brain is updating the first layer (input section) first instead of the last layer like normal backprop. I mean, tuning the input section with error correction makes sense, but wouldn't that cause overfitting? Almost like if you see a cat, your brain updates the filters at the input level, next time you see a dog, filters pass in the cat features? Maybe large number of neurons make sense here, but probably missing something fundamental.
+* Need to  stop forgetting my password - almost every old login workflow is basically forgot password -> otp -> new password -> login. This is getting annoying lol.
+* Extremely tired for the day - not sure if I'll be out for the count tomorrow. I got till September to find a job, else I'm toast.
+
+May 30
+* Mostly afk over the past couple of days.
+* PC Prices do be high right now - 2L for a decent build? Guess yeah, gotta wait for 2nd handparts or till the server refresh for enterprises.
+* Deepseek api pricing do be lucrative compared to everything I've seen. Might actually bite the bullet here - maybe atfer the current stuff ends?
+
+May 27
+* Mandi is cheaper than most food items + it's filling - unhealthy but hey, it's not like I wanna live long.
+* Picked up reading varsity again - had stopped after technical analysis. I should probably try it out to test what I've learnt. One of these days I gotta do that, else it'll be like SARISA lol.
+* Databricks GenAI cert prep is getting annoying now that I'm going into their workspaces/offerings. General stuff was easy but yeah, cert if basically for this anyways. Fun part tho, I'll probably ask the LLMs for how to do a thing anyways - cert is mostly for awareness ig?
+* Hikes and stuff is out, kinda decent but yeah it's been 4.5 years and not much technical progress. I mean picked up spark, terraform, aws and how to deal with clients, but it's eh? But given to even use my brain, I need to do cert speaks volumes lol. But yeah, need something harder to idk, feel something?
+* That VPS + trading thing is next + an curation for the obsidian.
+* Also couple of office friends are into running - But I don't understand the point of running/walking for it's own sake. Maybe it's not something that clicks with me. I kinda walk decent and can cover 2-3km without issues, last I checked 1 year back lol. But yeah, need to get back to exercises again.
+
+May 25
+* Extremely feverish but no fever yet - guess it's a precursor to the fever? Oh well will deal with it tomorrow.
+* Client holiday and my ass expected less work - worked more than normal lmao - guess I jinxed my ass.
+* I'm kinda understanding Stocks when it swings to extremes (high/low) - since there will be slight consolidation which can be scalped - but good with middle side though or majority of that.
+* Wondering when the rains will start - probably gonna be bad this year given the summers were bad.
+* That VPS is still staring at my soul lol - hopefully I can start on that one of these days.
+* Did not make progress on certification - need to recover first. Guess I'll hit bed soon.
+
+May 24
+* So mouse and keyboard baremin setup is done. For mouse created a flake repo - hopefully others can use the same. https://github.com/ZebWilson/m913-ctl-flake For keyboard - sudo chmod 666 /dev/hidraw4 /dev/hidraw5 /dev/hidraw6 Then load up https://www.usevia.app/ - also fixed the issue with double sleep by adding a sleep + wake layer key combos on the keyboard. But yeah, since I'm using chmod, it'll have to be used everytime I want to reprogram it. Maybe I'll create a utility script.
+* Chocolate peanut butter is actually good - can't believe I didn't tried this before. I think I can meethe calorie counts required for this.
+* Also my ass can't sit down for 1min by just staring at the wall - that shit was super hard. Guess I need to work on that. Work on basically doing nothing - who knows might fix up some other issues.
+* Work again from tomorrow - uhhhh maybe I can binge the next cert? I think the gen ai of databricks should be doable - need to find the low hanging ones ig - but mostly to get that feeling again? Maybe I should be doing something else instead of doing it in pepega envs like this
+* Didn't do that trading thing or the vps thing - but hey made some progress -so that's kinda good.
+
+May 23
+* Friday - went out for dinner to Chilly's. So I hate crowded  place and I hate going out (guess it's a comfortzone thing?). Anyways, food was alright - but the waiting period was wack
+   - it is what it is, but god do I hate stepping out. Can't get over chocolate shake being mid + it's priced to gouge IT folks. Go if team is paying lol
+* Finally did the m913-ctl thing - looks like it's working but the udev rule file should be 70 not 99 on the filename. So apparently we're trying to use utag access so that only the logged in user can modify it, but if you put udev rule with file name 99, it won't be picked up by the utag since it'll execute as 73. So when you add udev 99, the execution already happened and the tag will just sit there.
+* KiCad, Blender, Photo editor? I'm not sure what to use for that + freecad i got a lot things to look into - too many things and too little time, but I'm an procrastinator aaaaa- throwing away the phone works but yeah.
+* Nix sleeps and when waking up it has to be woken up twice. I'm guessing it's due to the akko keyboard. Checking journalctl shows that the usb mode on the keyboard - switch based trigger is causing sleep again. Need to look into this a bit - I'm guessing it's due to the USB mode.
+* How are functioning people managing their time? I feel like I'm missing something. I guess having money to clean up daily tasks is a super power lol.
+* So I edited some lines while I was in the editor for git message (git commit -a) - looks like the lines added after launching the editor are not added in the commit. So guess I'll do one more.
+
+May 21
+* Forgot to push this last aaa
+* Anyways - for yesterday literally ran on 1 california burrito mini bowl + 2 buttermilk + 1 mountain dew + 3 glasses of water. My body probably hates me lol - but I hate myself so it evens out?
+* Passed CCA-F but idk it felt more like luck + previous experience helped out a bit? I do think people who work on this can just ace it. I just got 865 sooo yeah - I'm not complaining. Still feel like it clutched out lol - now someone needs to drop a new architecture away from transformers - Jepa? and then we have new exams like this lol
+* Need to better myself on workflows on vscode + copilot and antigravity - at least on the git push.
+* Also the mouse shortcuts to save to memory are pending. Wonder when I'll do those lol.
+* VIA Programming on the keyboard as well - man got a lot of things to do and so little time. Time to binge these one by one.
+
+May 19
+* CCA-F was kinda fun? I mean like it gave me that adrenaline rush again - maybe after 1 year? But should've prepared or something - will probably fail - I got no clue using Claude nor have I used the multi-agent system. Stuff's too pricey + no access from my company. Regarding the exam though, it's not exactly the 6 scenarios mentioned in the site + practice exam only got info on 4 fixed scenarios. I guess rest is expected to be picked up from experience or courses. Questions were a bit descriptive + mcq had fun answers which are extremely similar- gotta reread the question to catch the key thing - sometimes it'll be subtle like preferred to reduce time, but the question would be for fixing the failure. Also a lot of other options do be imposters - cutting it pretty close to the actual answer. Online proctored but didn't happen trigger anything even though I got pings from team - should've killed teams and other background services. Overall though, I think folks will be binging the exam for LinkedIn in sometime. That said currently it's only for Partner companies - so it is what it is.
+* I should probably cut down the above point and make a blog or something out of that - too much stuff for daily log.
+* On to the next exam ig? Need to check databricks certification - also got some band increase thingy from client - so Karat exam is also coming up. Maybe everyone's motivating me to switch. Been here for 4.5 with pay under 1000$ per month lol.
+* Also planning to setup that yfinance basic tracker - will move to Kite once it's functional. Need to look into charting and exploratory data analysis - I'll go with EDA next time onwards lol.
+
+May 17
+* Well that was an alrightish weekend. Mostly cleaned up some stuff - room is an effing mess.
+* Looks like the certification exam portal from the company has been streamlined - I guess I can spam the fields which I'm interested in ig. Maybe I'm just looking for the thrill from the exam idk - shit's a bit wacky atm.
+* Didn't knew zerodha took almost 2-3 days for account opening - probably cause I did it on Saturday Nobody wants to work on weekends lol. Not like I need it urgently.
+* Guess I'll be able to get 30 days of enterprise claude - maybe I can use it here? not sure though since company can monitor/audit the data which I'll be attaching. It's not like I'm doing some big brainy thing - it'll be mostly brain rot shit which they won't even use - but still. On the otherside, it's dumb given I'm literally using Antigravity which has an explicit section which states data will be used by Google and there's nothing you can do about it. I do wonder though, even if you had an option to opt-out, who's going to verify that? Since the query and data has to be sent to the server to run inference lol.
+* Good idea not to do cert exam's from PG lol, the frequent current cut would've effed me over lol.
+* Also spamming finasteride so that it helps me keep the monkey hands to myself. 4-5 daily to 1-2. I'll take anything at this point lol. But yeah, more than the actual effect, I need the side effects cause I'm a fricking monkey.
+* Anthropic has a cert for using Claude? I mean wtf is that lol - are you supposed to you use Claude for the answers? I wonder if Windows 10 or 11 has certification exams. But yeah, that's what happens if you throw transformer arch to find local minimum. Gotta be a better way for this, but yeah. Praying to god  that someone creates AGI and just releases it into the wild - world might just crash and burn, but maybe ram prices will go down??
+
+May 14
+* That went well - but godamnit the architecture is so ass. I wanna the table structure and loading parts- tying up historical data to the new schemas should be fine - but will be blocked on the permissions.
+* Need to do more typing practice ig - hands are still not used to typing fast - it hurts or does that numb pain like thingy.
+* Gotta love the youtube playlist thingy which it randomly generates when you don't sign in. Gave me new stuff to listen - me likey. Also are humans some kinda of parasite that sucks out the life out of art? As in the movies or the songs which you repeatedly listen or watch, then move on. After one point, you don't even like hearing or watching that. In the case of movies, it's more on genres ig. But yeah, I'm not sure about artworks though - I've never been one to enjoy those. Also same for food? Spam the same food and you'll start hating it but yeah - probably brain dopamine hit capping out. In that case would overwriting memories and this circuit but repeating same shit give the same enjoyment everytime?
+* Maybe, just maybe I should give it my all - but why give it my all if I'm going to fail.
+* Canker sore strikes again, but this time it's under the tongue, so it's fine? Or maybe I got used to the pain from the last sore. That was extremely bad - Also this time it might be from skipping food this much. Oh well, 5 more days till it heals?
+
+May 13
+* Did not do much on the mouse - hopefully after prod deployment will get sometime.
+* Went into a bit on protein stuff  - so whey vs casein vs oats? and finally settled on eggs.
+* When WFH - I always forget to eat lunch or skip it - not sure if it's good or bad. 
+* So N after workout is extremely abd - especially 2N - you'll be sleepy lol + also 2N before 3hr sleep if kinda bad? Will know more tomorrow.
+* Making slow progress on varsity - it's kinda nice - but technical indicators always sound like old people's saying - people keep doing it cause they believe in it and due to that, it keeps being true. self fulfilling profecy? Need to looking into data sources I need to use - I feel like I'm missing something here. SMA and EMA sounds alright, but need to check the numbers or get more experience - since it's avg I feel like you can spike and smoothen it as you need.
+* Bi-directional balancing at work should be done tomorrow lol - maybe I should  write a framework for normal use.
+
+May 11
+* Fonts and the beauty of art is not something which I understand - I feel like an alien reading reviews and assimilating and then trying to replicate it. Sometimes it's like a foreign language which I can't understand. But anyways, to mimic, I don't need the understanding.
+* Started trying out that m913 mouse controls' on linux and now on to the rabbit hole of packaging it. This feels like a whole other world lol. Wonder how package maintainers do this full time.
+* So starving yourself for almost 24hours and then spamming full bf+lunch+dinner together is not a good idea. Mostly cause my tolerance is low for food intake + you're already tired af. No way I'll be consistent with 3 meals a day. Anyways, shit ton of water to the rescue.
+* Went with neckband again and got distracted more - that varsity reading didn't even happen today. That said, I read a good piece on interests - https://leafsartemis.substack.com/p/why-nothing-feels-interesting-anymore I loved this one for some reason - it doesn't say much but it hits home.
+
+May 10
+* Well it looks like i like chicken mac and cheese or chicken pasta - not sure what I got but yeah. Never liked it before - maybe it's the hunger playing tricks.
+* Making decent progress with zerodha varsity - but zero application to the real world. Need to get started with kite connect + account creation - it's giving me an headache though lol.
+* Should've shorted the oil futures lol + LPG and other prices probably gonna rise here though.
+* Switching to solar would've been a good idea.
+* Maybe I'll be a bit free after PROD this week. Maybe some local dev with docker and kubernetes?
+* Need to understand marketing basics - mainly on how industries function - IT industry logic first since the fresher number is not sustainable as you keep going up the ladder.
+* AR glasses do be pricey + battery tech is uhhh for this purpose. Wonder the power density required for this. Mainly 3-> battery + processor + display. Heat and weight should not fuck up the glasses. Power density needs to be super high + that processor I can't even.
+
+May 7
+* Towards everyone's surprise I did exercise - but god I'm not flexible at all. Hip flexors are so ass I swear if I get ads based on this
+* So yeah N before sleep is bad if you sleep within 2-3 hours. Don't wanna test more - cause I'mad sleeping near 8-9 hours but the sleep is not good or like you're not satisfied with the sleep. Gotta stay away.
+* Running on 1 meal a day. Breakfast was literally just water and dinner is now 1 packet chips. Is this a form of kms - my lazy ass don't even wanna get food. I mean I do have issues with life as it is
+* Tiny pc vs sff is something which I need to finalize and finish as soon as possible.
+* I hope the new strain just finishes me off - I think I'm done exploring what life has to offer. No motivation or dopamine to even explore stuff now.
+* Maybe it's just one of my phases or maybe it's just the existential crisis kicking in - eitherways I don't see the light at the end of this tunnel lol.
+
+May 6
+* mfw forgot to push again.
+* Was not able to get the databricks thing done - slave to the algos sadly. Phone usage shot upto 8-9hr just for yesterday. I'm not sure if giving out this data is a good idea lol.
+* No earphones to office for today or tomorrow or friday. Fun
+* Restarted that nism book for derivates again - I mean consistency is the bane of my existence. Hopefully I can stick to it this time. Also planning to setup a data logger into vps - which can push data back to my laptop (currently). Paper trading oughta be good ig. How hard can it be (I'm hoping to fail a lot rather than not even giving it a try)
+* Given my retarded ass, one of my friend's suggested to use time blocks on calendar. But the effort required to plan my day aaaa - that's a problem in itself.
+* Godamnit the phone usage spiked to almost 6hours - lower than yesterday but what am I doing so much. It's mostly brave - which is like a catch all for youtube and blogs and other stuff. Followed up by whatsapp - which is cursed - need to put a limit on opening that.
+* Started zerodha varsity again - gotta see how long I last before dropping again.
+* Need to workout again - wonder if I'll get bodypain since I'll be restarting. Curious how detrimental it is given I'll be skipping breakfast.
+* N before sleep is kinda bad ig? you do sleep, but it's not a good quality sleep + you wake up tired. need to test it out a bit more - would be helpful if pubmed has papers on this lol
+
+May 5
+* Forgot to write down yesterday. Was looking into jlpcb and jlcnc or similar stuff here. Looks like customs will be more than the actual pcb cost - gotta love this place lol. Local shops do it but the cost is almost 3-4x - customs route is better but the chance of it getting stuck or lost is high af.
+* Expecting ram pricing to come down in another 7-8 months - at least for ddr5 - issue is that since it'll be used for LLM work, the channels would be worn out - mostly timing issues - should be fine if I'm not driving it at the max speeds. ECC Ram modules help here - enterprises should be using this for part.
+* Same case with GPUs but yeah I'm curious how the DGX systems will fare - the wattage + clocking issues on that would make it unappealing ig? But yeah, smallers llms can be easily powered.
+* Going back to work is bad lol - it's mostly config update and managing - maybe I can automate the configuration setting there. Curious on databricks model endpoint with custom data - will save my ass a lot lol
+
+May 3
+* Well I realize I hate fashion industry - atleast the expensive or the fashionable aspect Mostly clueless on how the baggy pants which were trendy in the old age is trendy again now which is obviously hated by the present old folks - it's a circle but how do you know when it becomes trendy. Wonder if an ML model can predict it - or is it brands just shoving it down folks throat with PR agencies and influencers. Anyways, Devil Wears Prada 2 left me in the same state as 1. This industry is scammy but good.
+* Need to work on my mental health - been spiraling a lot. Exercise, grooming and personal health is at an all time low.
+* Didn't do much tbh other than looking into pricing of solar panels + batteries and for some weird reason, wiring up your own Li Battery Pack with BMS is cheaper upto about 200$ here. Well this country is weird to start with but yeah.
+* Didn't expect I'll go down the custom keeb route again, but yeah, looks like it'll be fun again. When is the cc1 going under 30k again aaaaaa.
+
+May 2
+* Late again - should probably sleep soon - again into the rabbit hole of research without money lol why do I end up doing this again
+* Watched movies + junk food -> exercise and schedule has been effed after the event. need to fix up + also those pile of clothes aaaaaa
+* Thermal pads which I wanted (assorted for 0.5,1,1.5) is unavailable - guess I'll wait for sometime
+* Planning to setup some pricing monitor which alerts and stuff for personal use - sourcing data would be annoying.
+* IEMs are put to good use - don't have to check on this section anymore. Current issue is basically dealing with neckband on office days lol
+* RAM prices have dropped a small bit - waiting for the enterprise inventory refresh lol. Would've been cool if I was in the US or somewhere. Prices here are wacky af.
+
+May 1
+* So read a lot on rack servers + 3d printing + storage options for 50TB+ I don't even work with 50TB lol - but yeah hardware is fun. The more I read the more i want that 3d printer.
+* Need to handle the addiction scenarios - probably setup multiple pavlovian triggers for myself. Current method is just throwing phone on to bed and start on the lap.
+* Got another movie today night - wonder how that'll go. Don't wanna step out since it might rain.
+* Also the antigravity suggestions are going wack - it's just nuking all the messages for some reason. At least the autocomplete is nuking all the messages. I do wonder why.
+* Need to look into htop or other metric analyzer and also find cheatsheets for performance metrics. Mostly to identify applications which are running.
+* Storage recovery books have been delayed for a bit - still haven't found a straight book - guess I'll start from the books then reverse engineer? I guess it works on hdd since if you're deleting the address just drops it. If you can the address directly, you should be able to fetch it. But I'm curious how data recovery programs work after rewriting it multiple times or even single time. Like maybe it's ferromagnetic nature reveals some past state based on current status - but still
+
+April 30
+* Well to no-ones surprise, did not do anything else other than travel back.
+* Been having too many of these do it for the plot kinda scenarios. Do not take Non AC Sleeper bus Do not go for more than 1 day event - folks were fun and wholesome but you feel outta place.
+* Need to finish up printer selection - main concern in CC1 having spare parts available -
+   1. They released cc2 - so cc1 production will stop
+   2. Parts would be of cc2 - cc1 parts might not even be available.
+   3. Opensource for cc is open centauri - they might move onto CC2.
+   4. Current price is not worth it for cc1 in India (38k = 400USD) If only Qidi Q2 was available here - welp
+* I don't even wanna remember the vps lol
+
+April 29
+* Well it's supposed to be the log of 28th but yeah - it's already 29th. Oh well, time to return
+* Was it fun? I'm not sure - but was it a different experience? yeah it was.
+* Tired for now - the marriage is tomorrow and we returning back after that. Back to rotting in bed lol. Need to wrap up the 3d printer purchase
+* That VPS project is like a murdered body which is staring back at me
+* The 12 buttons on the programmable mouse has to be assigned. Using it is nice, need to setup the key combos for using this properly. Wonder if it works properly in terminal
+* Rest of the stuff goes tomorrow - nvm will probably be day after tomorrow since it'll be overnight journey for tomorrow.
+
+April 26
+* I legit don't wanna go to this event - but that applies to 95% of the events which I'm invited to. I wish peeps would be fine with me being a no-show - I mean most of them know how introverted I am but still - it's just awkward to say no. And what am I supposed to do for pre-wedding stuff? I don't like to participate in stuff- which would be obvious if you're reading this lol
+* Oh well, at least I'll be able to explore the place? Not even sure what'll be there. On the bright side, won't even make it back which would be nice lol.
+* Got the nvidia stuff sorted out on nix - just need to finish up with mode setting since gpu is keeps switching but the nvidia one is low power (10-15) even when not being used - power will be drained super fast.
+* Also got a new mouse - the mmo one - need to assign functionality on the side buttons. Wonder how weird helix or other modal editors will be lol.
+* And the 3D printer and the VPS aaaaa - when do sort those out.
+
+April 25
+* Well that didn't work out. Weekends do be movie binge with folks - but that gnawing thought at the back of the head doesn't leave.
+* Gemini's auto-fill suggestions are quite wacky lol - maybe it's cause they're suggestions based on my logs, sooo yeah.
+* Canker sore on tongue started healing and I got a new one - what're the chances lol
+* Need to understand how to start acceptance on my self - this self-hate ain't going away
+* That VPS + a lot of research is pending.
+
+April 22
+* Well yeah- still not catching up - but I'm trying. 
+* Need to start working on the dashboard for the vps - it's been sitting there for a week now.
+* Also need to figure out the whole server thing - I mean I can get a used precision tower for 30k and then just add ram later when it gets cheaper. But is this all worth it?
+* Been missing out on workouts aaa - but hey usually I won't even realize it after 1 week lol.
+* Job application aaaaa - dunno what I'm supposed to do now.
+* I wanna do a PhD in neuromorphic computing - but do I even get a chance after 4.5 years at Deloitte? I guess this life's done - maybe better luck in next.
+* Kinda wish it'd just end but yeah - maybe it's just one of those days. Maybe I don't wake up tomorrow but if I do, hopefully it's a bit better.
+
+April 21
+* Need to look into holographs - at least how to make the light visible to the eyes without crutch. Currently it's light modulators make makes 2 phase shifted lights collide + reflect back to eyes using some dust/mist/screen etc. I mean even laser tracks are visible only due to dust or particles in the air.
+* The question of what I'm doing with my life is something which I'm running away from. I guess whenever existential questions arise, my hands automatically move towards phone. How do I even start facing these? I'd prefer if I can change it without some life altering traumatic event.
+* I probably need more exposure to different fields - at least make a list of the stuff which I'm interested in and then start exploring them. I mean I started logging like this at 27 (stb) - soooooo - yea
+* Oh well it's already the next day and here I am still recollecting the past - when do I start catching upto the present
+
+April 19
+* One more day before the cycle renews again.
+* Should I create space for music, movies and games? idk - also extremely high lying rate - that I'm gaslighting myself. I'll probably need to record my own tastes/interests cause I'm pretty my mind will gaslight into not liking/liking it later. Is this what strict parenting does to someone lol
+* Laptop requires repasting quickly - Lenovo technician did not redo the thermal pads and it shows. Oh well, ptm and pads are a bit cheaper - guess I'll do it at home since i don't have tools here. It would be nice if every place had a common tool library or something - where people can just borrow tools for a small fee for using it in that place + experienced folks can guide them. I guess it'll be nice
+
+April 18
+* I don't like the brain's use or lose philosophy - it's such a limiting bs. I want to store everything inside the brain - but I keeping forgetting - brushing up helps - but it's just the myelin sheath getting a fresh coat? - why do I need to put 20-30% effort again?
+* Touching X/Twitter drains my energy - but I don't even reply or even post - reading tax is mostly emotional triggers which just drains one out. Hmm Ill probably need to read up on emotions and the brain power drain. It just makese you lethargic? - maybe it's the feed or maybe it's the energy which I have to use to understand the context of the tweet -> then understand what the user is saying - I mean that's the normal brain working, but still - is it cause the feed is all over the place that each topic requires refresh on the working memory? - Anyways something to look into later (which will never happen lol)
+* Need to check tensara and gpu discord - for tinygrad + pytorch + nvidia stuff. Curious how much it sucks on 4060m - limited clocks on the cores + shity BW. But I guess electronics or at least the arch will be fun.
+* Also need to look into refresh cycles of enterprises - especially given GPU's memory is stressed higher than core - so I guess learning memory replacement on gpus will be good. Man I probably need a better job.
+* Lakes having the reflection of the evening sunkiss is beautiful - but I feel like I'm just saying it cause it looked good, not cause I feel it - not sure if it's making sensing me as I'm typing this out
+   - it's something which I saw yesterday - but oh well - might as well just dump it here. Note: Some wordcel will be able to portray this a lot better than me- that always amazes me? Im curious how their brain works - the flow will be smoother ig?
+* Forgot to check on protein vs fat vs carb breakdown on a deficit body - especially since body is playing russian roulette on starvation vs stuffing till puke.
+* Got a lot of work to do - so yeah - time to get started. Will update rest in the evening.
+* fml I ended up researching monitors and servers which I can't even buy - why do I have a brain like this?
+* atleast did the NCH thing which I was supposed to do. did not do anything else- godamnit
+* dark souls 3 is fun - hopefully I don't binge that - but man it feels good to learn attack patterns
+* oh well need to finish up stuff atleast tomorrow.
+
+April 16
+* Need to redesign the shitty code at work - it's downright embarrasing and I'm pretty sure it's gonna crash soon. But I can't get the permission to do it - man corp sucks lol More complaints:
+   - It uses pandas and runs on databricks - who even designed this crap
+   - Holds the entire data after aggregation in python dictionary and then converts that into pandas df then to spark df.
+   - How is this even working? I guess the aggregation SQLs written by Source Teams are saving this framework but god - increasing granularity is gonna be a nightmare.
+* Need to figure out a proper schedule for office return + workout. Also spending a lot of time on planning things to buy instead of actually buying them- F my brain.
+* Also need to figure out the min days to perform one exercise for the muscle to grow - keeping min nutrients constant just theoretically - but genetics lol
+
+April 13
+* Back to office again ig - need to get the laptop repaired - which is not booting at all - probably corrupted ram, the way system restarts in the middle of something - then does not boot for sometime. I guess CMOS reset will help out.
+* Need to start applying more + estimate if the AI boom is gonna subside by the time of 6000 nvidia cards.
+* That derivatives exam book is a bit boring - maybe it'll be interesting once I get to the actual chunks.
+* Market gonna be puts ig - since America changes their mind every 3 days.
+* Calmshell exercise is actually good for dbs - but it doesn't cover all 3 glute muscles - but yeah - I can't even contract it. Gotta start somewhere before frog pumps.
+* Need that dashboard up and running fast for the vps
+
+April 11
+* So workout did helpout with stamina a lot more - went for cleaning some shrubs + picking up some 200 coconuts usually I'd be drained. Wasn't that bad this time - so yeah.
+* Dead butt is gonna cost me a decent amount of effort aaa - but hey only person to blame is me.
+* Also in-regards to IEM, PURE is the one for me. I'm done- won't need any more.
+
+April 8
+* Well I did end up sleeping early. Also I think I need an mobile app - which just takes url + auth and starts putting data there. Just to use while traveling and other stuff.
+* Another thing; whenever I'm having some difficult thoughts, my brain/hands just move towards phone/apps. Shitty pavlovian response - gotta break it. Now how do I do that? Same thing happens when I read some difficult topics - either this or kicks off day dreaming. Is this some copium trap which I've setup for myself from the fear of failure? wtf lol
+* Yo wtf, committed this and my hands literally went for the phone - am I treating it like some reward mechanism? I'm too broke to hit psychology books now aaaaaaa
+
+april 7
+* You thought I was done with this,eh? Well, I did too- but guess I'm back.
+* API Gateways were pretty easy to do with LLM + Terraform docs -> did not expect it to be that easy
+* my retarded ass thinks it can do NISM Derivates exam (VIII) one - I got no clue how index is created lol One of hte benefits of llm is that it has seen the entire internet back and forth- so even links would be directly avaiable workbook for this: https://api.nism.ac.in/cmp/
+* purchased vps - bu this autistic ass will touch everything except that now - god I hate it lol
+* gotta setup nvidia driver + cuda on nix - wondering how long pytorch will take - if it's taking long - tinygrad it is (it's coming either ways)
+
+april 6
+
+april 5
 
 april 4
-* tfw I slept yesterday just as i hit the bed - guess skipping 1 meal + light workout is the answer?
-   or it might be sleep debt lol
+* tfw I slept yesterday just as i hit the bed - guess skipping 1 meal + light workout is the answer? or it might be sleep debt lol
 * april 3 was mostly work though - so yeah - did go late to church
 * gotta go for easter church - hope I don't fall asleep there aaaaa
 * finally got CC with 0 forex - idfc first wow - got the thing in like 3 hours - payment for VPS was smooth af
@@ -60,850 +415,48 @@ april 4
 * also need to stop binge eating raw mangoes
 * workouts are a bit more stable for the past 3 days - but I've jinxed myself now
 * saw folks picking up chip tapeout - designing, testing and fabricating - felt kms - but yeah that's the default state
-* today was mostly switching all old accounts into new email - did not know it would be this hard lol - someone should setup something for this.
-   AWS cert was definitely annoying with old email, new email and corp email. But yeah got the hang of it.
+* today was mostly switching all old accounts into new email - did not know it would be this hard lol - someone should setup something for this. AWS cert was definitely annoying with old email, new email and corp email. But yeah got the hang of it.
 * gotta do the same for gcp + databricks (these use some different cert manager ig aaaaaa)
 * need to find public api for scraping gold price + movements
 
-april 5
+april 3
 
-april 6
+april 2
+* wonder wtf waits me here 
+* stored proc with merge into is bad when you're refilling columns by folding in middle. Just insert should be used. Fun problem tho - should be finished by tomorrow.
+* didn't do much other than work -> VDI is such a pita - how hard is to handle the latency lol
+* but yeah bare in would be 200ms but still - can't believe we can't go faster than light - yet
+* got a shit ton to clean up on obsidian dump repo + visualization there.
+* stocks monitoring - based on markets -> TODO | oh well another one which I won't be seeing anymore.
+* getting used to IEMs - gotta try tuning them maybe over the weekend
+* god i hate travel and pending travel over the weekend is already giving me headache
+* wouldn't mind if an AI wants to off me and take me as a shell lol
 
-april 7
-* You thought I was done with this,eh? Well, I did too- but guess I'm back.
-* API Gateways were pretty easy to do with LLM + Terraform docs -> did not expect it to be that easy
-* my retarded ass thinks it can do NISM Derivates exam (VIII) one - I got no clue how index is created lol
-   One of hte benefits of llm is that it has seen the entire internet back and forth- so even links would be directly avaiable
-   workbook for this: https://api.nism.ac.in/cmp/
-* purchased vps - bu this autistic ass will touch everything except that now - god I hate it lol
-* gotta setup nvidia driver + cuda on nix - wondering how long pytorch will take - if it's taking long - tinygrad it is (it's coming either ways)
+april 1
+* apparently life's a fucking joke
+* can't believe this shit took almost 1 day for setting up wireless extender on archer c6. steps: Basically you have source and relay (our C6).
+1. Make source and relay settle on same channel width (40/80)
+2. Make source and relay use same channel (36)
+3. Make source and relay use same encryption pattern (WPA2-PSK)
+4. Disable EasyMesh on relay (C6).
+5. Set LAN IP of relay such that it's inside the x.x.x part of the ip. Eg: If source is 192.168.1.1 and relay is at 192.168.0.1 change relay into 192.168.1.120 (any value from 2-254
+   - as long as other devices in the network is not occupying this)
+6. WDS -> 2.4GHz vs 5GHz(choose only 1) -> Survey -> Select Source WIFI -> Type in Password -> Save
+7. Disable DHCP Server on Relay (C6)
+8. Profit? (all this circus just to get 50% of Access Point mode/wired extender)
 
-April 8
-* Well I did end up sleeping early. Also I think I need an mobile app - which just takes url + auth and starts putting data there.
-   Just to use while traveling and other stuff. 
-* Another thing; whenever I'm having some difficult thoughts, my brain/hands just move towards phone/apps. 
-   Shitty pavlovian response - gotta break it. Now how do I do that?
-   Same thing happens when I read some difficult topics - either this or kicks off day dreaming. 
-   Is this some copium trap which I've setup for myself from the fear of failure? wtf lol
-* Yo wtf, committed this and my hands literally went for the phone - am I treating it like some reward mechanism?
-   I'm too broke to hit psychology books now aaaaaaa
+* Also got some weird case of high latency for 5 ping(9000ms - 4000ms), then down to 10ms - I'm guessing power saving + radio sweep
 
-April 11
-* So workout did helpout with stamina a lot more - went for cleaning some shrubs + picking up some 200 coconuts
-   usually I'd be drained. Wasn't that bad this time - so yeah.
-* Dead butt is gonna cost me a decent amount of effort aaa - but hey only person to blame is me.
-* Also in-regards to IEM, PURE is the one for me. I'm done- won't need any more.
+* Is it normal to not feel like living? Cause what's even the point of this -> It's not like there is a grand purpose For those theological folks -> God sent us here to test us anyways | so why not just return back early?
 
-April 13
-* Back to office again ig - need to get the laptop repaired - which is not booting at all - probably corrupted ram,
-   the way system restarts in the middle of something - then does not boot for sometime. I guess CMOS reset will help out.
-* Need to start applying more + estimate if the AI boom is gonna subside by the time of 6000 nvidia cards.
-* That derivatives exam book is a bit boring - maybe it'll be interesting once I get to the actual chunks.
-* Market gonna be puts ig - since America changes their mind every 3 days.
-* Calmshell exercise is actually good for dbs - but it doesn't cover all 3 glute muscles - but yeah - I can't even contract it.
-   Gotta start somewhere before frog pumps.
-* Need that dashboard up and running fast for the vps
+* at this point, getting fired might be better - zombie era might be over
 
-April 16
-* Need to redesign the shitty code at work - it's downright embarrasing and I'm pretty sure it's gonna crash soon.
-   But I can't get the permission to do it - man corp sucks lol
-   More complaints:
-   - It uses pandas and runs on databricks - who even designed this crap
-   - Holds the entire data after aggregation in python dictionary and then converts that into pandas df then to spark df.
-   - How is this even working? I guess the aggregation SQLs written by Source Teams are saving this framework but god - increasing granularity 
-      is gonna be a nightmare.   
-* Need to figure out a proper schedule for office return + workout. Also spending a lot of time on planning things to buy
-   instead of actually buying them- F my brain.
-* Also need to figure out the min days to perform one exercise for the muscle to grow - keeping min nutrients constant
-   just theoretically - but genetics lol
+march 31
+* Realizing that once I get the stuff - the ideas drain out. Got a VPS and now I can't seem to focus or find a drive for anything. This do be strange - but I don't know what to do lol. Maybe some data collection? but gotta do web scraping again.
+* gotta look into terraform based deployments into VPS
 
-April 18
-* I don't like the brain's use or lose philosophy - it's such a limiting bs.
-   I want to store everything inside the brain - but I keeping forgetting - brushing up helps -
-   but it's just the myelin sheath getting a fresh coat? - why do I need to put 20-30% effort again?
-* Touching X/Twitter drains my energy - but I don't even reply or even post - reading tax is mostly 
-   emotional triggers which just drains one out. Hmm Ill probably need to read up on emotions and the 
-   brain power drain. It just makese you lethargic? - maybe it's the feed or maybe it's the energy which
-   I have to use to understand the context of the tweet -> then understand what the user is saying - 
-   I mean that's the normal brain working, but still - is it cause the feed is all over the place that 
-   each topic requires refresh on the working memory? - Anyways something to look into later (which will 
-   never happen lol)
-* Need to check tensara and gpu discord - for tinygrad + pytorch + nvidia stuff. Curious how much it sucks on 
-   4060m - limited clocks on the cores + shity BW. But I guess electronics or at least the arch will be fun.
-* Also need to look into refresh cycles of enterprises - especially given GPU's memory is stressed higher 
-   than core - so I guess learning memory replacement on gpus will be good. Man I probably need a better job.
-* Lakes having the reflection of the evening sunkiss is beautiful - but I feel like I'm just saying it 
-   cause it looked good, not cause I feel it - not sure if it's making sensing me as I'm typing this out
-   - it's something which I saw yesterday - but oh well - might as well just dump it here.
-   Note: Some wordcel will be able to portray this a lot better than me- that always amazes me? 
-   Im curious how their brain works - the flow will be smoother ig?
-* Forgot to check on protein vs fat vs carb breakdown on a deficit body - especially since body is playing 
-   russian roulette on starvation vs stuffing till puke.
-* Got a lot of work to do - so yeah - time to get started. Will update rest in the evening.
-* fml I ended up researching monitors and servers which I can't even buy - why do I have a brain like
-   this?
-* atleast did the NCH thing which I was supposed to do. did not do anything else- godamnit
-* dark souls 3 is fun - hopefully I don't binge that - but man it feels good to learn attack patterns
-* oh well need to finish up stuff atleast tomorrow.
-
-April 19
-* One more day before the cycle renews again.
-* Should I create space for music, movies and games? idk - also extremely high lying rate - that 
-   I'm gaslighting myself. I'll probably need to record my own tastes/interests cause I'm pretty
-   my mind will gaslight into not liking/liking it later. Is this what strict parenting does
-   to someone lol
-* Laptop requires repasting quickly - Lenovo technician did not redo the thermal pads and it shows.
-   Oh well, ptm and pads are a bit cheaper - guess I'll do it at home since i don't have tools here.
-   It would be nice if every place had a common tool library or something - where people can just
-   borrow tools for a small fee for using it in that place + experienced folks can guide them.
-   I guess it'll be nice
-
-April 21
-* Need to look into holographs - at least how to make the light visible to the eyes without crutch.
-   Currently it's light modulators make makes 2 phase shifted lights collide + reflect back to eyes
-   using some dust/mist/screen etc. I mean even laser tracks are visible only due to dust or particles
-   in the air. 
-* The question of what I'm doing with my life is something which I'm running away from. I guess 
-   whenever existential questions arise, my hands automatically move towards phone. 
-   How do I even start facing these? I'd prefer if I can change it without some life altering 
-   traumatic event. 
-* I probably need more exposure to different fields - at least make a list of the stuff which I'm 
-   interested in and then start exploring them. 
-   I mean I started logging like this at 27 (stb) - soooooo - yea
-* Oh well it's already the next day and here I am still recollecting the past - when do I start 
-   catching upto the present
-
-April 22
-* Well yeah- still not catching up - but I'm trying. 
-* Need to start working on the dashboard for the vps - it's been sitting there for a week now.
-* Also need to figure out the whole server thing - I mean I can get a used precision tower for 30k
-   and then just add ram later when it gets cheaper. But is this all worth it?
-* Been missing out on workouts aaa - but hey usually I won't even realize it after 1 week lol.
-* Job application aaaaa - dunno what I'm supposed to do now.
-* I wanna do a PhD in neuromorphic computing - but do I even get a chance after 4.5 years at Deloitte?
-   I guess this life's done - maybe better luck in next.
-* Kinda wish it'd just end but yeah - maybe it's just one of those days.
-   Maybe I don't wake up tomorrow but if I do, hopefully it's a bit better.
-
-April 25
-* Well that didn't work out. Weekends do be movie binge with folks - but that gnawing thought at 
-   the back of the head doesn't leave. 
-* Gemini's auto-fill suggestions are quite wacky lol - maybe it's cause they're suggestions based
-   on my logs, sooo yeah.
-* Canker sore on tongue started healing and I got a new one - what're the chances lol
-* Need to understand how to start acceptance on my self - this self-hate ain't going away
-* That VPS + a lot of research is pending.
-
-April 26
-* I legit don't wanna go to this event - but that applies to 95% of the events which I'm invited to.
-   I wish peeps would be fine with me being a no-show - I mean most of them know how introverted I am
-   but still - it's just awkward to say no. And what am I supposed to do for pre-wedding stuff?
-   I don't like to participate in stuff- which would be obvious if you're reading this lol
-* Oh well, at least I'll be able to explore the place? Not even sure what'll be there.
-   On the bright side, won't even make it back which would be nice lol.
-* Got the nvidia stuff sorted out on nix - just need to finish up with mode setting since gpu is 
-   keeps switching but the nvidia one is low power (10-15) even when not being used - power will be
-   drained super fast.
-* Also got a new mouse - the mmo one - need to assign functionality on the side buttons.
-   Wonder how weird helix or other modal editors will be lol.
-* And the 3D printer and the VPS aaaaa - when do sort those out.
-
-April 29
-* Well it's supposed to be the log of 28th but yeah - it's already 29th. Oh well, time to return
-* Was it fun? I'm not sure - but was it a different experience? yeah it was.
-* Tired for now - the marriage is tomorrow and we returning back after that.
-   Back to rotting in bed lol. Need to wrap up the 3d printer purchase
-* That VPS project is like a murdered body which is staring back at me
-* The 12 buttons on the programmable mouse has to be assigned. Using it is nice, need to setup
-   the key combos for using this properly. Wonder if it works properly in terminal
-* Rest of the stuff goes tomorrow - nvm will probably be day after tomorrow since it'll be
-   overnight journey for tomorrow.
-
-April 30
-* Well to no-ones surprise, did not do anything else other than travel back.
-* Been having too many of these do it for the plot kinda scenarios.
-   Do not take Non AC Sleeper bus
-   Do not go for more than 1 day event - folks were fun and wholesome but you feel outta place.
-* Need to finish up printer selection - main concern in CC1 having spare parts available -
-   1. They released cc2 - so cc1 production will stop
-   2. Parts would be of cc2 - cc1 parts might not even be available.
-   3. Opensource for cc is open centauri - they might move onto CC2.
-   4. Current price is not worth it for cc1 in India (38k = 400USD)
-   If only Qidi Q2 was available here - welp
-* I don't even wanna remember the vps lol
-
-May 1
-* So read a lot on rack servers + 3d printing + storage options for 50TB+
-   I don't even work with 50TB lol - but yeah hardware is fun. The more I read the more i want that
-   3d printer. 
-* Need to handle the addiction scenarios - probably setup multiple pavlovian triggers for myself.
-   Current method is just throwing phone on to bed and start on the lap.
-* Got another movie today night - wonder how that'll go. Don't wanna step out since it might rain.
-* Also the antigravity suggestions are going wack - it's just nuking all the messages for some reason.
-   At least the autocomplete is nuking all the messages. I do wonder why.
-* Need to look into htop or other metric analyzer and also find cheatsheets for performance metrics.
-   Mostly to identify applications which are running.
-* Storage recovery books have been delayed for a bit - still haven't found a straight book - guess
-   I'll start from the books then reverse engineer? I guess it works on hdd since if you're deleting
-   the address just drops it. If you can the address directly, you should be able to fetch it.
-   But I'm curious how data recovery programs work after rewriting it multiple times or even single time.
-   Like maybe it's ferromagnetic nature reveals some past state based on current status - but still
-
-May 2
-* Late again - should probably sleep soon - again into the rabbit hole of research without money lol
-   why do I end up doing this again
-* Watched movies + junk food -> exercise and schedule has been effed after the event. need to fix up
-   + also those pile of clothes aaaaaa
-* Thermal pads which I wanted (assorted for 0.5,1,1.5) is unavailable - guess I'll wait for sometime
-* Planning to setup some pricing monitor which alerts and stuff for personal use - sourcing data 
-   would be annoying.
-* IEMs are put to good use - don't have to check on this section anymore. Current issue is basically
-   dealing with neckband on office days lol
-* RAM prices have dropped a small bit - waiting for the enterprise inventory refresh lol.
-   Would've been cool if I was in the US or somewhere. Prices here are wacky af.
-
-May 3
-* Well I realize I hate fashion industry - atleast the expensive or the fashionable aspect
-   Mostly clueless on how the baggy pants which were trendy in the old age is trendy again now 
-   which is obviously hated by the present old folks - it's a circle but how do you know when it 
-   becomes trendy. Wonder if an ML model can predict it - or is it brands just shoving it down folks 
-   throat with PR agencies and influencers. 
-   Anyways, Devil Wears Prada 2 left me in the same state as 1. This industry is scammy but good.
-* Need to work on my mental health - been spiraling a lot. Exercise, grooming and personal health
-   is at an all time low. 
-* Didn't do much tbh other than looking into pricing of solar panels + batteries
-   and for some weird reason, wiring up your own Li Battery Pack with BMS is cheaper upto about 200$ here.
-   Well this country is weird to start with but yeah.
-* Didn't expect I'll go down the custom keeb route again, but yeah, looks like it'll be fun again.
-   When is the cc1 going under 30k again aaaaaa.
-
-May 5
-* Forgot to write down yesterday. Was looking into jlpcb and jlcnc or similar stuff here. 
-   Looks like customs will be more than the actual pcb cost - gotta love this place lol.
-   Local shops do it but the cost is almost 3-4x - customs route is better but the chance of it getting
-   stuck or lost is high af.
-* Expecting ram pricing to come down in another 7-8 months - at least for ddr5 - issue is that 
-   since it'll be used for LLM work, the channels would be worn out - mostly timing issues - 
-   should be fine if I'm not driving it at the max speeds.
-   ECC Ram modules help here - enterprises should be using this for part.
-* Same case with GPUs but yeah I'm curious how the DGX systems will fare - the wattage + clocking
-   issues on that would make it unappealing ig? But yeah, smallers llms can be easily powered.
-* Going back to work is bad lol - it's mostly config update and managing - maybe I can automate
-   the configuration setting there. Curious on databricks model endpoint with custom data - will 
-   save my ass a lot lol 
-
-May 6
-* mfw forgot to push again.
-* Was not able to get the databricks thing done - slave to the algos sadly. Phone usage shot upto 
-   8-9hr just for yesterday. I'm not sure if giving out this data is a good idea lol.
-* No earphones to office for today or tomorrow or friday. Fun
-* Restarted that nism book for derivates again - I mean consistency is the bane of my existence.
-   Hopefully I can stick to it this time. Also planning to setup a data logger into vps - which can
-   push data back to my laptop (currently). Paper trading oughta be good ig.
-   How hard can it be (I'm hoping to fail a lot rather than not even giving it a try)
-* Given my retarded ass, one of my friend's suggested to use time blocks on calendar. But the 
-   effort required to plan my day aaaa - that's a problem in itself.
-* Godamnit the phone usage spiked to almost 6hours - lower than yesterday but what am I doing so much.
-   It's mostly brave - which is like a catch all for youtube and blogs and other stuff. Followed up
-   by whatsapp - which is cursed - need to put a limit on opening that.
-* Started zerodha varsity again - gotta see how long I last before dropping again.
-* Need to workout again - wonder if I'll get bodypain since I'll be restarting. Curious how 
-   detrimental it is given I'll be skipping breakfast. 
-* N before sleep is kinda bad ig? you do sleep, but it's not a good quality sleep + you wake up tired.
-   need to test it out a bit more - would be helpful if pubmed has papers on this lol
-
-May 7
-* Towards everyone's surprise I did exercise - but god I'm not flexible at all. Hip flexors are so ass
-   I swear if I get ads based on this
-* So yeah N before sleep is bad if you sleep within 2-3 hours. Don't wanna test more - cause I'mad
-   sleeping near 8-9 hours but the sleep is not good or like you're not satisfied with the sleep.
-   Gotta stay away.
-* Running on 1 meal a day. Breakfast was literally just water and dinner is now 1 packet chips.
-   Is this a form of kms - my lazy ass don't even wanna get food. I mean I do have issues with life
-   as it is
-* Tiny pc vs sff is something which I need to finalize and finish as soon as possible.
-* I hope the new strain just finishes me off - I think I'm done exploring what life has to offer.
-   No motivation or dopamine to even explore stuff now.
-* Maybe it's just one of my phases or maybe it's just the existential crisis kicking in - eitherways
-   I don't see the light at the end of this tunnel lol.
-
-May 10
-* Well it looks like i like chicken mac and cheese or chicken pasta - not sure what I got but yeah.
-   Never liked it before - maybe it's the hunger playing tricks.
-* Making decent progress with zerodha varsity - but zero application to the real world. Need to get
-   started with kite connect + account creation - it's giving me an headache though lol.
-* Should've shorted the oil futures lol + LPG and other prices probably gonna rise here though.
-* Switching to solar would've been a good idea.
-* Maybe I'll be a bit free after PROD this week. Maybe some local dev with docker and kubernetes?
-* Need to understand marketing basics - mainly on how industries function - IT industry logic first
-   since the fresher number is not sustainable as you keep going up the ladder.
-* AR glasses do be pricey + battery tech is uhhh for this purpose. Wonder the power density required
-   for this. Mainly 3-> battery + processor + display. Heat and weight should not fuck up the 
-   glasses. Power density needs to be super high + that processor I can't even.
-
-May 11
-* Fonts and the beauty of art is not something which I understand - I feel like an alien reading 
-   reviews and assimilating and then trying to replicate it. Sometimes it's like a foreign language
-   which I can't understand. But anyways, to mimic, I don't need the understanding. 
-* Started trying out that m913 mouse controls' on linux and now on to the rabbit hole of packaging 
-   it. This feels like a whole other world lol. Wonder how package maintainers do this full time.
-* So starving yourself for almost 24hours and then spamming full bf+lunch+dinner together is not
-   a good idea. Mostly cause my tolerance is low for food intake + you're already tired af.
-   No way I'll be consistent with 3 meals a day. Anyways, shit ton of water to the rescue.
-* Went with neckband again and got distracted more - that varsity reading didn't even happen today.
-   That said, I read a good piece on interests - https://leafsartemis.substack.com/p/why-nothing-feels-interesting-anymore
-   I loved this one for some reason - it doesn't say much but it hits home.
-
-May 13
-* Did not do much on the mouse - hopefully after prod deployment will get sometime.
-* Went into a bit on protein stuff  - so whey vs casein vs oats? and finally settled on eggs.
-* When WFH - I always forget to eat lunch or skip it - not sure if it's good or bad. 
-* So N after workout is extremely abd - especially 2N - you'll be sleepy lol + 
-   also 2N before 3hr sleep if kinda bad? Will know more tomorrow.
-* Making slow progress on varsity - it's kinda nice - but technical indicators always sound like
-   old people's saying - people keep doing it cause they believe in it and due to that, it keeps 
-   being true. self fulfilling profecy?
-   Need to looking into data sources I need to use - I feel like I'm missing something here.
-   SMA and EMA sounds alright, but need to check the numbers or get more experience - since it's avg
-   I feel like you can spike and smoothen it as you need.
-* Bi-directional balancing at work should be done tomorrow lol - maybe I should  write a framework
-   for normal use.
-
-May 14
-* That went well - but godamnit the architecture is so ass. I wanna the table structure and loading 
-   parts- tying up historical data to the new schemas should be fine - but will be blocked on 
-   the permissions.
-* Need to do more typing practice ig - hands are still not used to typing fast - it hurts or does 
-   that numb pain like thingy.
-* Gotta love the youtube playlist thingy which it randomly generates when you don't sign in. 
-   Gave me new stuff to listen - me likey. Also are humans some kinda of parasite that sucks out the 
-   life out of art? As in the movies or the songs which you repeatedly listen or watch, then move on.
-   After one point, you don't even like hearing or watching that. In the case of movies, it's more 
-   on genres ig. But yeah, I'm not sure about artworks though - I've never been one to enjoy those.
-   Also same for food? Spam the same food and you'll start hating it but yeah - probably brain
-   dopamine hit capping out. In that case would overwriting memories and this circuit but repeating
-   same shit give the same enjoyment everytime?
-* Maybe, just maybe I should give it my all - but why give it my all if I'm going to fail.
-* Canker sore strikes again, but this time it's under the tongue, so it's fine? Or maybe I got used
-   to the pain from the last sore. That was extremely bad - Also this time it might be from skipping
-   food this much. Oh well, 5 more days till it heals?
-
-May 17
-* Well that was an alrightish weekend. Mostly cleaned up some stuff - room is an effing mess.
-* Looks like the certification exam portal from the company has been streamlined - I guess I can
-   spam the fields which I'm interested in ig.
-   Maybe I'm just looking for the thrill from the exam idk - shit's a bit wacky atm.
-* Didn't knew zerodha took almost 2-3 days for account opening - probably cause I did it on Saturday
-   Nobody wants to work on weekends lol. Not like I need it urgently. 
-* Guess I'll be able to get 30 days of enterprise claude - maybe I can use it here? not sure though
-   since company can monitor/audit the data which I'll be attaching. It's not like I'm doing some 
-   big brainy thing - it'll be mostly brain rot shit which they won't even use - but still.
-   On the otherside, it's dumb given I'm literally using Antigravity which has an explicit section
-   which states data will be used by Google and there's nothing you can do about it.
-   I do wonder though, even if you had an option to opt-out, who's going to verify that? Since the 
-   query and data has to be sent to the server to run inference lol.
-* Good idea not to do cert exam's from PG lol, the frequent current cut would've effed me over lol.
-* Also spamming finasteride so that it helps me keep the monkey hands to myself. 4-5 daily to 1-2.
-   I'll take anything at this point lol. But yeah, more than the actual effect, I need the side
-   effects cause I'm a fricking monkey.
-* Anthropic has a cert for using Claude? I mean wtf is that lol - are you supposed to you use Claude
-   for the answers? I wonder if Windows 10 or 11 has certification exams.
-   But yeah, that's what happens if you throw transformer arch to find local minimum.
-   Gotta be a better way for this, but yeah. Praying to god  that someone creates AGI and just 
-   releases it into the wild - world might just crash and burn, but maybe ram prices will go down??
-
-May 19
-* CCA-F was kinda fun? I mean like it gave me that adrenaline rush again - maybe after 1 year? But
-   should've prepared or something - will probably fail - I got no clue using Claude nor have I
-   used the multi-agent system. Stuff's too pricey + no access from my company.
-   Regarding the exam though, it's not exactly the 6 scenarios mentioned in the site + practice 
-   exam only got info on 4 fixed scenarios. I guess rest is expected to be picked up from experience
-   or courses.
-   Questions were a bit descriptive + mcq had fun answers which are extremely similar- gotta 
-   reread the question to catch the key thing - sometimes it'll be subtle like preferred to reduce
-   time, but the question would be for fixing the failure.
-   Also a lot of other options do be imposters - cutting it pretty close to the actual answer.
-   Online proctored but didn't happen trigger anything even though I got pings from team -
-   should've killed teams and other background services.
-   Overall though, I think folks will be binging the exam for LinkedIn in sometime.
-   That said currently it's only for Partner companies - so it is what it is.
-* I should probably cut down the above point and make a blog or something out of that -
-   too much stuff for daily log.
-* On to the next exam ig? Need to check databricks certification - also got some band increase 
-   thingy from client - so Karat exam is also coming up. Maybe everyone's motivating me to switch.
-   Been here for 4.5 with pay under 1000$ per month lol.
-* Also planning to setup that yfinance basic tracker - will move to Kite once it's functional.
-   Need to look into charting and exploratory data analysis - I'll go with EDA next time onwards lol.
-
-May 21
-* Forgot to push this last aaa
-* Anyways - for yesterday literally ran on 1 california burrito mini bowl + 2 buttermilk + 
-   1 mountain dew + 3 glasses of water. My body probably hates me lol - but I hate myself so it 
-   evens out?
-* Passed CCA-F but idk it felt more like luck + previous experience helped out a bit? I do think
-   people who work on this can just ace it. I just got 865 sooo yeah - I'm not complaining.
-   Still feel like it clutched out lol - now someone needs to drop a new architecture away from
-   transformers - Jepa? and then we have new exams like this lol
-* Need to better myself on workflows on vscode + copilot and antigravity - at least on the git push.
-* Also the mouse shortcuts to save to memory are pending. Wonder when I'll do those lol.
-* VIA Programming on the keyboard as well - man got a lot of things to do and so little time.
-   Time to binge these one by one.
-
-May 23
-* Friday - went out for dinner to Chilly's. So I hate crowded  place and I hate going out 
-   (guess it's a comfortzone thing?). Anyways, food was alright - but the waiting period was wack
-   - it is what it is, but god do I hate stepping out. Can't get over chocolate shake being mid +
-   it's priced to gouge IT folks. Go if team is paying lol
-* Finally did the m913-ctl thing - looks like it's working but the udev rule file should be 70 not
-   99 on the filename. So apparently we're trying to use utag access so that only the logged in user
-   can modify it, but if you put udev rule with file name 99, it won't be picked up by the utag 
-   since it'll execute as 73. So when you add udev 99, the execution already happened and the tag 
-   will just sit there.
-* KiCad, Blender, Photo editor? I'm not sure what to use for that + freecad i got a lot things to 
-   look into - too many things and too little time, but I'm an procrastinator aaaaa- throwing away
-   the phone works but yeah.
-* Nix sleeps and when waking up it has to be woken up twice. I'm guessing it's due to the
-   akko keyboard. Checking journalctl shows that the usb mode on the keyboard - switch based trigger
-   is causing sleep again. Need to look into this a bit - I'm guessing it's due to the USB mode.
-* How are functioning people managing their time? I feel like I'm missing something. I guess having
-   money to clean up daily tasks is a super power lol.
-* So I edited some lines while I was in the editor for git message (git commit -a) - looks like the 
-   lines added after launching the editor are not added in the commit. So guess I'll do one more.
-
-May 24
-* So mouse and keyboard baremin setup is done. For mouse created a flake repo - hopefully others 
-   can use the same.
-   https://github.com/ZebWilson/m913-ctl-flake
-   For keyboard - sudo chmod 666 /dev/hidraw4 /dev/hidraw5 /dev/hidraw6
-   Then load up https://www.usevia.app/ - also fixed the issue with double sleep by adding a sleep
-   + wake layer key combos on the keyboard. But yeah, since I'm using chmod, it'll have to be used
-   everytime I want to reprogram it. Maybe I'll create a utility script.
-* Chocolate peanut butter is actually good - can't believe I didn't tried this before.
-   I think I can meethe calorie counts required for this.
-* Also my ass can't sit down for 1min by just staring at the wall - that shit was super hard. Guess
-   I need to work on that. Work on basically doing nothing - who knows might fix up some other issues.
-* Work again from tomorrow - uhhhh maybe I can binge the next cert? I think the gen ai of databricks
-   should be doable - need to find the low hanging ones ig - but mostly to get that feeling again?
-   Maybe I should be doing something else instead of doing it in pepega envs like this
-* Didn't do that trading thing or the vps thing - but hey made some progress -so that's kinda good.
-
-May 25
-* Extremely feverish but no fever yet - guess it's a precursor to the fever? Oh well will deal with
-   it tomorrow.
-* Client holiday and my ass expected less work - worked more than normal lmao - guess I jinxed my 
-   ass.
-* I'm kinda understanding Stocks when it swings to extremes (high/low) - since there will be slight
-   consolidation which can be scalped - but good with middle side though or majority of that.
-* Wondering when the rains will start - probably gonna be bad this year given the summers were bad.
-* That VPS is still staring at my soul lol - hopefully I can start on that one of these days.
-* Did not make progress on certification - need to recover first. Guess I'll hit bed soon.
-
-May 27
-* Mandi is cheaper than most food items + it's filling - unhealthy but hey, it's not like I wanna
-   live long.
-* Picked up reading varsity again - had stopped after technical analysis. I should probably try it
-   out to test what I've learnt. One of these days I gotta do that, else it'll be like SARISA lol.
-* Databricks GenAI cert prep is getting annoying now that I'm going into their workspaces/offerings.
-   General stuff was easy but yeah, cert if basically for this anyways. Fun part tho, I'll probably
-   ask the LLMs for how to do a thing anyways - cert is mostly for awareness ig?
-* Hikes and stuff is out, kinda decent but yeah it's been 4.5 years and not much technical progress.
-   I mean picked up spark, terraform, aws and how to deal with clients, but it's eh?
-   But given to even use my brain, I need to do cert speaks volumes lol. But yeah, need something
-   harder to idk, feel something?
-* That VPS + trading thing is next + an curation for the obsidian.
-* Also couple of office friends are into running - But I don't understand the point of running/walking
-   for it's own sake. Maybe it's not something that clicks with me. I kinda walk decent and can cover
-   2-3km without issues, last I checked 1 year back lol.
-   But yeah, need to get back to exercises again.
-
-May 30
-* Mostly afk over the past couple of days.
-* PC Prices do be high right now - 2L for a decent build? Guess yeah, gotta wait for 2nd handparts
-   or till the server refresh for enterprises.
-* Deepseek api pricing do be lucrative compared to everything I've seen. Might actually bite the 
-   bullet here - maybe atfer the current stuff ends?
-
-May 31
-* Found an interesting paper for today - https://arxiv.org/pdf/2605.28693 | Looks like the learning logic in
-   the brain is updating the first layer (input section) first instead of the last layer like normal backprop.
-   I mean, tuning the input section with error correction makes sense, but wouldn't that cause overfitting?
-   Almost like if you see a cat, your brain updates the filters at the input level, next time you see a dog,
-   filters pass in the cat features? Maybe large number of neurons make sense here, but probably missing
-   something fundamental.
-* Need to  stop forgetting my password - almost every old login workflow is basically forgot password -> otp
-    -> new password -> login. This is getting annoying lol.
-* Extremely tired for the day - not sure if I'll be out for the count tomorrow. I got till September to find
-   a job, else I'm toast.
-
-June 6
-* Almost 1 week - guess it was a bit hectic? so spamming 2 espresso works - but I get extremely sleepy for 
-   the first 1 hour - then go focused? I was not sure if I became focused cause of caffeine or if it was due
-   to the interest in semi-conductor manufacturing - at least the high level working of fab.
-   Charge trap for ssd and capacitor for ram was a fun read.
-* Also got to read a patent application for cmos image sensor - but godamnit it's so ass - might be worse than
-   whatever I wrote in 12th, amplification but does not state how or the gain or how many cycles. Timing circuit
-   but it's only half of the picture. On the bright side, learnt a bit about MOS Capacitors.
-* Also learnt why views are bad for spark - since it's recomputes stuff. Shitty views + mid queries on top
-   =shitty performance + disk spill + shuffle write/read. Makes sense in retrospective.
-   I'm more curious on how photon from databricks works - the joins+filters+scans did cut down the time 
-   tremendously.
-* Also that Databricks Cert is still pending - course is such a drag - maybe I should just binge it and do
-   practice exams more. I guess certifications in general does not make sense you are not actively working in
-   that field and it's like mugging up transformer manufacturing in a college. God I hated that shit.
-* Need to figure out how shitty headaches happen - I'm guessing it's due to bad sleep but yeah, need to find
-   the quickest fix for that when it happens. I mean it's bearable but it's not like the normal pain which
-   numbs down after some time cause the brain gets used to it?
-* Guess I'm typing a lot in the morning itself - which is surprising. I mean I didn't type nothing this past
-   week.
-
-June 7
-* mfw I forget to push this - oh well, it's not like nothing much happened. Just played some coop games.
-* E-Ink caught my interests now - mainly cause it can change colours - maybe that colour changing hair thing
-   would be possible given the energy requirements are cheap - so if you can have some sort of heat->electricity
-   no - not a fucking steam machine again - just a heat->electricity panel on the scalp - you can technically 
-   it.
-* Need to look into app development - only exp I got is basically MIT App Inventor - which is like the best
-   stuff I've used - but yeah need to start looking.
-
-June 9
-* Got that PROD Deployment and lot of work - sleep is not  taking a hit - mostly on high level it's sorted?
-   And deadlines are a bit flexible since it's a migration nobody asked for ig.
-* Applied for the cert's voucher - do plan on binging it - currently using udemy practice tests - I do think
-   any of the available ones will be fine.
-* VPS + Trading thing is pending - Also need to refresh my domain? God this is getting expensive.
-* Also RAM pricing + Processor stuff is not helping at all. I think the 550 + R9 5900x + DDR4 is my best bet.
-   Might wait for 1 more for enterprise level refresh - which should push a lot of RAM out.
-   I'd prefer if I can get 3090 or even a 4090 - but yeah currently a dream lol.
-* Virus based llms might be the only way to train on a global scale now - don't think anything else is gonna
-   cut it for current market. But then how do you handle the memory or lock outs?
-
-June 10
-* PROD went fine? I guess I never had failures or serious stuff like that so far - hopefully I don't jinx myself.
-   Service Credential which can be binded to any workspace is like a risk waiting to be exploited lol. 
-   Stored Procedure handling needs to be setup - currently it ain't that good - also silently swallowing errors
-   ain't helping.
-* Secret management for notebook based systems is annoying af - maybe I'll check an .env file for databricks
-   workspaces - but yeah - pasting it into variable is a no go, putting it in databricks secrets is 404 cause
-   enterprise?, storing it in env? not sure, we don't have secret manager access to fetch from there.
-   Or even hcp vault for that matter. For local systems, .env works but how do you handle it in the case of 
-   agentic workflows. Not something which you'd trust after Fable lol - not like there was any trust from GPT2
-   but yeah! 
-* Anyways our client is kinda good? since they have Claude enterprise access but did not enable Fable - 30 days
-   data retention for enterprises is a huge no go obviously. I wonder who are the poor folks who basically went
-   fafo.
-* Also stock market from phone is kinda eh? Sometime you can see how it'll go, other times you're missing a 
-   shit ton of data - at least on the derivative side. But yeah, no data -> gambling anyways.
-* Gold and silver do be tanking - is it due to US IPOs? I'm not sure. Also I'm baseless on the NPO vs CPO the 
-   optics based connectors used for Nvidia enterprise cards. Need to read more here.
-* Still remember the 9 rejections from CC applications lol - but yeah score is pretty good. Need to diversify
-   and keep low credit varieties for increasing the score.
-* Also need to understand why I have this outer shell - it's perfect for colleagues and work folks but it's 
-   never coming off? Not sure if it's from the faking/compullsive lying nature which is inbuilt from fun 
-   childhood lol - but yeah - need to sort this out as well.
-* Workouts aint happening - need to start again. But yeah, daily walking do be helping out a ton here.
-
-June 15
-* So during some work which I'm trying to focus, random ngmi kinda thoughts start surfacing - almost
-   like it's trying to deviate me from the challenging work at hand - a weird escape mechanism tbh.
-* Databricks Cert is still pending cause vouchers are out - not like I'm ready for it but yeah.
-   Also nix configurations are finally in git - so can nuke the system and it might come back as it
-   was.
-* Need more money to fund my interests lol - being broke ain't fun at all.
-* Gemini CLI and antigravity is kinda good now that token management is centralized ig?
-   It's kinda alright to use now - maybe I should enable the agentic workflow - but I need to learn
-* VPS and Zerodha do be staring right at my soul.
-* Also super tired after work - and super sleepy near 12. Usually it doesn't happen near 1-2. Guess
-   body's taking a toll from pushing the previous days ig
-
-June 17
-* I still think I should've expired at 21 lol - it's been pretty downhill after that. But yeah, 
-   hated birthdays even before that. Nothing makes you feel more weirder than this day.
-* The mouse is actually pretty good to use - but inside the VDI, the doesn't function as intended.
-   Screenshot and other things are not working, sometimes even backward and forward. I'm not sure
-   if it's the VDI's security checks or something - not skilled enough to check that as of now.
-* Yeah went as expected. Maybe I'm not meant to exist, more like why do I exist - even if I die 
-   the people close to me will hurt a bit - but they'll recover | the world will continue - so what
-   why am I still marching on with this life? Is there any meaning to this life? Even if a God exists
-   does he care about me lol - given there are billions of others who work harder or pray harder.
-   Why do I exist with a consciousness - not even gonna check the spelling on this one lol.
-   Do wonder if couple of my neurons are gone, am I still the same me? What if another person with
-   almost similar neuron structure exists - will our experiences be different cause of the memories?
-   Would we be linked with such shitty life views? Anyways, this has been an useless blabber lol
-   But yeah, humans probably optimize for neuron sync or gene sync - at least the groups will be
-   formed based on that. Further optimizations in the group - I'm not sure.
-* I wonder how dehydrated and how much waste you have to process before getting kidney stones. Guess
-   for some people it'll be pretty quick? Not something which I've looked into.
-* Was looking into seborric dermatitis - for conditions which can have multiple root causes, 
-   identifying the actual cause is annoying. Main thing is that you're doing ablation tests - but
-   the results and the experiments have to be spaced over days. This time delay is super annoying
-   + it's not like you're living in a vacuum tube to avoid other contaminations. If everyone has a
-   tissue culture system at home for testing this out - experiments would've been fun.
-   Maybe like, a machine where you scrape off some of your tissues -> grow the cells and pass in the 
-   possible scenarios one by one - ablation (from all possible issues) - test entire envs in parallel
-   Sounds expensive af but maybe one day.
-* Overall should not have gone beyond 20-21 lol
-
-June 18
-* Going back home after 2 months ig - need to sort out things with me first.
-* Realizing that I have no free-will or decision making skill sucks dick. Can't even decide on
-   taking a half day or full day leave. Can't decide between if I should go out or stay in.
-   How did even end up here at 27. God needs to stop making these mistakes.
-
-June 20
-* Back at home again - and the old feeling of being lagging behind is back - the past do be staring
-   right into your eyes. The promises or the dreams which you've delayed around. 
-   Acceptance is super hard lol - I wish it'd be like some movie where I understand about it and 
-   idk fix it straight up. Oh well, maybe this life will continue as it is. Just as it goes on 
-   continuously. 
-* Finding time and drive is another thing. Everything interests me at the same time I'm not pursuing 
-   anything seriously - it's like watching social media to be hooked into one thing. If I can do 
-   anything first would be to literally upgrade brain to understand material fast - then impulse
-   control. Oh well, easier said that done. Sometimes I do think how bad it'll be if I had LLM
-   weights instead of my brain - yeah can't think of anything unique or whatever and it's a token
-   predictor - but it'll be better than whatever is this.
-* Weather contrast do be making you sweat - bodys' adaptability is surprising. PID can't tune this.
-   How does it even regulate itself, it's not like the brain is sending signals everytime, they act
-   themselves for certain items, for others yes, brain is needed.
-* I'm wondering why hasn't any mad scientist or someone tried AGI using a human brain as a base?
-   I guess pumping oxygen and blood - purification and all of that would be tricky. Also 
-   extracting out a working brain do be hard - wonder if someone dies and their brain is restored-
-   do the neurons/myelin sheath remain as it is. Do their memories fade away but with the same
-   personality
-* Gotta check that esp32 which has been sitting ducks for sometime. Also blender, freecad aaaaa
-   lot of things.
-* Maybe job is the issue? I mean, working on something unsatisfying for 50+ hours a week? May the
-   future generations have it better than us lol - may pursual of interests be something that is 
-   doable compared to earning your bread from whatever that pays the bill. I mean how ironic that
-   I am saying this - while I have all the possibilities to do exactly that.
-* I do wonder when we gonna finish up the caste/race/colour/country differences and start going 
-   full force on farming the universe. Would be fun to see that one day. But yeah, cultural
-   differences do be huge. And without exploration or stepping out, you won't be introduced to
-   other cultures which can expand your world view. And as the saying goes, changes comes when the
-   old generation dies and new who's ingrained with different views takes their place lol
-
-June 22
-* GPU Mode competitions are interesting - only question is how long before I loose my interst.
-   So far so good - but hitting math books is idk - tiring after being out of touch.
-   LLMs do be helping here - but it can be simplified a whole lot. But yeah, LLM doesn't know
-   my current base to build it on top of.
-* Also N is not stopping anytime soon. The neural pathways are hardwired - need to find escape
-   routes or I'll just end up relapsing like always.
-* Since i haven't touched the tools a bit, just cleaning up some weed ended up with body pain
-   the kinda sore which you get after first day of gym lol. But yeah it's a pretty good 
-   feeling, unlike something sprained or shit.
-* Oh well, another travel tomorow - gotta see how that goes.
-
-July 1
-* Did not get time for GPU Mode's QR Decomposition - now trying the Eigen Decomposition - but it's
-   hard? At least I did not understand why eigen vectors were special when I had studied those in 
-   college lol, so yeah double the work - mostly for unerstanding how it doesn't rotate + acting as
-   roots for the matrix.
-* Had 3 kittens at home - one got killed by car infront of me - dug up and buried. Suprised to see
-   lack of emotions in me. I do wonder if I'm emotionally numb to protect myself lol. Anyways 
-   the other 2 kittens are no where to be found and that's a bit sad? I mean, their sibling got 
-   killed nearby so ig it makes sense?
-* The weed killing black sheets which I had suggested last year worked. But since we used random
-   sheets it got effed by UV and rain - basically tropical fucks up most plastics. So now we got 
-   UV resistant sheets. Will see how they'll last - more work though now. Why aren't there some
-   bots for weed plucking and drilling ground.
-* Completed the databricks gen ai cert - voucher was delayed a bit. Anyways, kinda straight forward
-   except for maybe 15-20 questions from databricks specifics - which is also easy if you checked
-   the course work. Anyways, is there a point in getting certifications in the age of LLMs? 
-   I mean for architecting you'd be using plan mode anyways - and the agents would be spun up
-   for each cloud platform (even multicloud solutions), so is that even useful. I guess it's needed
-   incase the LLMs are not that advanced or go inside the local minimum, anyways. Personally it 
-   feels like a waste, unless it's free + you're forced to do this from your company. 
-* Repasting laptop is still pending - I'm a bit worried I can mess it up and end up with bad thermals
-   + broken laptop lol. Also the current prices does not spark joy/confidence to take apart a 8 year
-   old gaming laptop. Tbh, I'm surprised it lasted this long - did have display and fan replaced,
-   but still, it's working on that 1060 gpu.
-* Gold and silver is coming down - probably due to rate hikes which might come this year. 
-   All the semi's do be printing money + capacity/production is low. Guess DDR5 or GPU production
-   will be taking a hit for sometime. Best case scenario will be server cycle refresh which will be
-   happening from the mid of next year - which should dump some extra stuff. Even then, hyperscalers
-   will be buying those up to provide compute to run local models. For me though, I'm not even sure
-   if the hardware will be experimented - since we do require hardware designed for software to test
-   out new frameworks. 
-
-July 5
-* At home for most part - not getting much time after work since it's going a bit after that on
-   consistency. Also cousins are also moving out/away - guess it's time for me to start working 
-   on something I want - this has been the same talk for years, but now with less people around
-   it's finally hitting a bit hard? And I think I'm almost reaching the point where I can't do much.
-* Now I'm getting cold feet as I'm approaching the paste replacement on this laptop. Given the RAM
-   prices if I mess up, it's going to be an expensive fix for sure.
-* Bathing in cold water is super annoying but it does give me enough sleepiness. So it evens out?
-* Need to finalize on an LLM subscription - or at least get a non shitty local qwen working properly.
-   4060m would run it ig maybe at 3-5 tk/s? Deepseek and GLM is the only hope lol - maybe once GPT's
-   new model is released.
-* Got new samsung s6 monitor having KVM - man I need to check pricing before getting stuff - time
-   to the life on earth as a game and start making money lol. The interesting stuff starts opening
-   after you make that ig. All the fun stuff, let it be nuclear at home, homelab, 3d printing etc
-   all of this requires money - a lot of money.
-* Lying to myself + day dreaming is becoming a depression hole again. I need to start my acceptance
-   journey. If only it was as easy in the animes, you have some self talk and fix it. But for me
-   it's literally trying to fake it (maybe faking it doesn't exist till I'm cured of it). 
-* So the battery of the clock ran out and I thought I'd have to go out to get it. But I found a 
-   full pack of AAA battery. Fam told me that I had ordered this 6 months ago or something lol.
-   Sometimes I love my past self. Maybe I should do stuff like this to my future self. Make it less
-   painful. Oh well, time to eat the frogs.
-
-July 10
-* Looks like I ended up making more frogs for my future self. Gotta love how I can F it up.
-   Anyways car's backlight need replacement. Need to find time for fixing this.
-* Also that GPU comp is also pending. Need to sort out that part as soon as I can. Most of
-   the things I want to complete are still there sadly. No clue on how or when I'll even be
-   able to start those. Maybe I should monitor myself for the time spent.
-
-July 12
-* Back to office location again - gives me the depression or that low energy phase again.
-   Hopefully  tomorrow will be better - can't do GPU competition - no way in hell am I writing 12k
-   lines or launching 100+ experiments to figure out which are the hotpaths - most are llm powered.
-   I don't have that shit. But what I'll do is pick it up from scratch ig - it's fun to understand 
-   it.
-* Gotta wake up early and try out zerodh. VPS can be used as the proxy/connector for static ip - 
-   maybe I can keep an IP logger for the current locatin's IP as well - to figure out if that's 
-   changing (maybe during power outage?)
-* Burning sensation in eye is there - not sure how it can to be - but yeah. It's a lot better than
-   previous days so there's that.
-* Need to automate jira things in work - mostly for handling story updates-> code changes are from
-   there. Also claude's code output if verbose + got a lot of unnecessary code. It's like it's
-   optimising for loc like a metric lol - even test cases ig.
-   Email part is still pending - need to setup that win32 snippet for that skill.
-   Also computer use from basic OCR + pyautowin should be enough for standard tasks - maybe a skill
-   should be fine. If I can couple this with a vector db, files and other details can be quickly
-   searched up by the llms - mainly cause of grep or searches which does string/text search but 
-   miss due to semantics/context.
-* Also need to figure out how to make vacuum(low earth orbit) at low prices - maybe under 5k.
-* Battery setup for solar panel charge holding instead of sending it to the grid.
-
-July 13
-* Going to office and back is draining lol - idek how people do this regularly - but I guess it 
-   depends on the salary as well? Anyways AC buses are soo good and we need more of it. 
-* Error logs not being provided to the users inside VPCs is a bit eh. It's understandable given
-   you wouldn't want a malicious actor to read the error logs to find a bypass instead of failures.
-   Anyways, databricks-aws cloud provider error when creating a table is such a bitch.
-* Now I need to figure out how I'll get a tatkal for Friday evening back to Kerala lol. Or Saturday
-   morning. Should be fine unless I get sick or something. Hopefully not but it's me we're talking
-   about.
-* Need to look into that patent agent exam thing again. God knows when I can prepare for that.
-   The pile of random motivation projects is increasing lol
-
-July 17
-* It's been 1 month and still no progress. I do wonder why god is still keeping me here. Just take
-   me off lol, at least the resources won't be wasted on me.
-* I don't have much passion or ambition in my life. I just wanna laze around, play games or do 
-   something which makes me happy. Maybe it's making a table, maybe it's pulling out weeds, maybe 
-   it's some random nerd snipe, maybe it's just making omelette. But given we all need money to survive here I am lol. Is life 
-   meaningful enough to live? Idk, I don't have any particular attachments as of now. I think I'll be
-   fine leaving it today (but it has to from my expiry lol).
-* Anyways, best bet to live the lazy chill life is to automate whatever I don't like or make more 
-   money. But I don't particularly want to optimize for money? AI seems to be best bet, not cause
-   of money, but cause it can automate and maybe give me a glimpse of the future I want lol.
-   Oh well, if I can't reach it, maybe I can make it for the future me or people like me who wants
-   that lazy life lol.
-* So my understanding on AI is extremely suferficial, but SGD is uhh questionable even for me.
-   Maybe it's dunning kruger, but entire layer getting updated instead of just the weights which
-   participate in activation is weird. ALso neural networks learn in time, while I  got no clue how
-   brains learn. When I say learn in time- I mean like they have forward pass and backward pass (just
-   for learning). 
-   Also learning a new fact does not update the general knowledge - it updates the specific fact based
-   knowledge. Local minima - but that applies to my dumbass as well.
-* Anyways, once I get this part sorted, I'll have to hit robotics, maybe I can hit  it eariler if 
-   I can make some money for the 3D printer. Only way for us to have a chill life is to have a someone
-   take care of the actual work (agriculture, cleaning, production etc) and what else is better than
-   slaves, I meant robots. Now that said I think the Russians would know better since the Soviet Union
-   was going for congitron at that point - probably got the name wrong but yeah.
-* But even during this time, biology cannot be left out. But yeah immortality if definitely not for me
-   I want to expire as fast as possible but not by myself - cause that's gay. But yeah, changing your
-   body like some random rpg character doesn't sound so bad - I meant trust would be at an all time
-   low, but it's going to be fun lol.
-* Enough rambling for today - that cup noodles will get cold lol.
-* MFW I burnt my tongue from the noodles. Anyways gotta get started with something which gives me 
-   leverage. I'm not sure what that is, like I don't even know what I like - don't think I have 
-   anything which I like that much. But yeah, only way is fafo.
-* Now to figure out where to start.
-
-July 29
-* Been sometime - and late as always - need to get stuff in order again - but yeah - returning 
-  from office is taking time - more like I'm getting late when returning - should be done in 
-  3-4 more days - hopefully no more dependencies or blockers pending.
-* Doing certification first = end up coaching people for their cert - I don't wanna do it aaa
-  more like I don't have much info which would be helpful other than binging the course+practice
-  tests.
-* Purchases and the pending work on existing purchases are all piling up - no more purchases till
-  I can finally start leveraging existing purchases - vps + other stuff. Exception would be kite
-* RAM prices won't be coming down any time soon - unless of course the servers start recycling 
-  earlier - then again - market pricing here is fucked for 2nd hand items lol
-* Kimi did open source their model and SSI might've picked up on continual learning - now when are
-  they going to release their model - finally getting replaced would be fun. Talking about being
-  replaced - mostly automating my work into individual skill file - but the main pain point is
-  explaining - everytime - lets say I go over  databricks connections, cluster and other stuff
-  and day after I explain snowflake. Now  when I ask it to link these it, I need to explain again
-  or let it try it out again - at least on this part - voice is better of blabbering on to this.
-  But yeah, it's like someone who keeps forgetting/not being able to connect multiple stuff.
-  Don't get me wrong, it can do it if I leave it to it, but it fafo around a lot - which makes sense.
-* Need to start on that filesystem for vector soon - it's going to be pretty useful or myself lol.
-
-July 30
-* Planning to speedrun a lot of the setup today - I mean some parts are still not available for me
-  but it is what it is.
-* Need to learn about prompt injection - dumbass me was thinking it was an artifact of training-
-  but if they setup guardrails - how does it identify what is a guardrail or not - I meant updating
-  weights to the direction of the query vector (except when it's using weights/vectors not designed)
-  for that would work. And certain characters being OOD (out of distribution - memory too shit so I'll 
-  forget) would case the chain to happen. Reminds me of speedrunning in games - glitchy mechs.
-* Need to find apartments to switch - I'm barely making any money - how am I supposed this aaa
-  Oh well, may the future folks have it easy
-* The urge to off is kinda staying sane - I'm guessing it's bidding it's time - which is a bit worrying?
-  But I guess keeping myself busy + not lapsing into monkey business helps a bit - but the fear of not 
-  trying - that keeps on breathing down my neck - but what do I even do - I don't even have good ideas fml
-
-July 31
-* Blink and it's over - but it's literal
-* The work is pending - some part of it is cleared up - should be able to speedrun on monday/tuesday.
-* DeepSeek did pull through and it's just the flash version lol - gotta love that team. Got higher
-  expectations for pro - I wonder how SSI will go as well - but yeah - it might be near september ig?
-* Hopefully I can use this weekend for some work? Need to figure out how I can do what synk does but
-  for personal systems. I mean, just getting the version and space used should be good enough!
-* Man forgot to push after going to movie. Oh well it is what it is
-
-August 1
-* Wonder if I should add years to this - maybe I'll throw this into an archive with the year at the end.
-* I'm curious about the output distribution of LLMs - if I'm writing an LLM output analyzer, I'd be \
-  training on the output from latest llms - what if I write one which is retarded or trained on my data 
-  (both the same). Would it be in the distribution or would it be out of that? Same for images - 
-  if it's diffusion based, you'd be able to find the mathematical pattern from it - which can
-  theoretically capture the change - god knows how much data you'll need though. Maybe something I
-  can check on this pepega system.
-* Looks like I'm unskilled for the job market lol - well not surprised at all given credentials
-  are shit. But that's also just an excuse cause I haven't done any of my personal projects.
-  Time to at least give it a try
-
-August 6
-* Regarding work - the PoC was completed pretty quick - should be gucci to finish it up today
-  Might be able to push in UT framework as well cause my lazy ass definitely don't want to take SS.
-* Finally started using the vps for coding - but need to make the interface on phone better - termux
-  is good for what it is, but ffs I don't  wanna type in terminal on the keyboard. Need to look into
-  that a bit.
-* I feel like half the interfaces can be redesigned now - to an higher abstraction; I'm not a designer
-  though + not enough trust on the matrix multiplication to be consistent when serving multiple people.
-* I do wonder if AI hate will shift if it's introduced as matrix multiplication - like we devised a 
-  new matrix multiplication method for calculating likely hood of the response distribution.
-* Also decided I won't struggle with modal editors - one gui + one terminal (micro) - should be enough.
-  For terminal mux -> herdr is doing pretty fine as of now.
-* The certifications are pending - maybe after binging work I can switch to that. I do feel like binging
-  on work is kinda eh - yeah I can do the full E2E setup for databricks + aws (VPCs are uhhhh) and set it
-  up on Github Actions + Terraform; but it's not worth it imo - need to pick up design patterns for scaling.
-  That's just vague, but lets say you create a program having 5 functions. If you have to add 3 functions 
-  later which needs to be invoked in each or cases like those. Also what all to decouple - so refactoring
-  the code base will be easier. Oh well, couple of prompts away from learning.
-* 70% of the day was gone explaining stuff to folks + calls + story writing - thank god for enterprise llm
-  made it a lot better - but damn these models need better context - currently I'm using a worklog and 
-  asking it to pick up from there - but it's not enough. If only the model can be trained while you're using
-  but then personalized models would result in weights just for you - unless it's partitioned.
-* Time to learn flutter quick - llm literally making me catch up the stuff I've missed out lol - oh well
-  no better time than now to learn everything I wanted.
-* Those certifications are pending though - need the claude pro + databricks pro + aws (refresher so any
-  pro?) + google/azure (learning towards gcp) + terraform if possible
-* Also the urge to off is kinda low these days - gotta keep myself busy.
+march 30
+* God i learnt about insta subscriptions - OF but for soft content? mostly surprised that peeps are paying for it. Maybe desensitivation isn't the answer. On the bright side some folks are making bank off it. While some others realize they're not cut out for it and quit (now you're broke and need therapy)
+* learnt about emi situation for folks in GCC  - basically high EMI before the war and now you're basically at sunken cost fallacy?
+* daily prayer is not helping mental health lol - but maybe it takes time - or the head is fucked like this forever.
+* need to figure out dpdp + how data is handled currently - and as always - how much of it will actually be kept proper

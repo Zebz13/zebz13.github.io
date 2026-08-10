@@ -1,0 +1,294 @@
+I think the blog naturally breaks into **Base Setup** and **Quality-of-Life / Integrations**. That makes it easy for readers to stop wherever they want.
+
+---
+
+# 1. Install Termux
+
+* Install the latest GitHub release.
+* Grant storage permissions.
+* Update packages.
+* Install Git and OpenSSH.
+
+```bash
+pkg update
+pkg upgrade
+
+pkg install git openssh
+```
+
+---
+
+# 2. Configure SSH
+
+## Phone → Laptop/VPS
+
+* Generate an SSH key.
+* Copy the phone's public key to:
+
+  * laptop
+  * VPS
+
+This allows the phone to SSH into your other machines.
+
+---
+
+## Laptop → Phone
+
+* Configure `sshd`.
+* Add your laptop's public key to the phone's `authorized_keys`.
+
+Now your laptop (or an automation agent) can manage your phone remotely.
+
+---
+
+# 3. Configure Git
+
+* Configure username.
+* Configure GitHub noreply email.
+* Add the SSH key to GitHub.
+* Convert repositories from HTTPS to SSH.
+
+---
+
+# 4. Android storage
+
+Run
+
+```bash
+termux-setup-storage
+```
+
+Now scripts can access
+
+```
+Downloads
+Documents
+Pictures
+Music
+Videos
+```
+
+---
+
+# 5. Automatic Git sync
+
+Create a small script that
+
+* pulls
+* stages changes
+* commits if necessary
+* pushes
+
+Schedule it using
+
+```bash
+termux-job-scheduler
+```
+
+---
+
+# 6. Scheduled jobs
+
+Use Android's JobScheduler instead of cron.
+
+Example:
+
+```
+Every 2 hours
+
+↓
+
+Run Git sync
+
+↓
+
+Phone automatically backs up notes
+```
+
+---
+
+# Add-ons
+
+## Termux:API
+
+Install
+
+* Termux:API app
+* `termux-api` package
+
+Useful commands include
+
+* Battery
+* Clipboard
+* SMS
+* Camera
+* GPS
+* Notifications
+* Wi-Fi
+* Flashlight
+* Sensors
+* TTS
+
+This turns the phone into a remotely controllable Android device rather than just a Linux shell.
+
+---
+
+## Termux:Boot
+
+Install the Termux:Boot app.
+
+Create a boot script that starts services automatically.
+
+For example
+
+```
+Boot
+
+↓
+
+Start sshd
+
+↓
+
+Start automation
+
+↓
+
+Phone is immediately manageable
+```
+
+---
+
+# Networking
+
+## Install Tailscale
+
+Join the phone to your tailnet.
+
+Now every device has a stable private IP.
+
+Example:
+
+```
+Laptop
+    │
+    │
+ VPS ─── Tailscale ─── Phone
+```
+
+No port forwarding.
+
+No dynamic DNS.
+
+Works from anywhere.
+
+---
+
+## Restrict SSH to Tailscale
+
+Instead of exposing SSH publicly:
+
+* don't forward port 8022 on your router
+* bind `sshd` only to the Tailscale interface, or use firewall rules to allow connections only from the Tailscale network
+* use SSH keys only (disable password authentication)
+
+Result:
+
+```
+Internet
+     ✗
+
+Tailnet
+     ✓
+```
+
+That dramatically reduces the attack surface while still allowing remote management.
+
+---
+
+# Obsidian setup
+
+Create a Git repository for your vault.
+
+Clone it onto:
+
+* laptop
+* phone
+
+Use SSH remotes.
+
+Your scheduled sync script keeps the phone copy up to date.
+
+---
+
+## Vault organization
+
+Examples:
+
+```
+Vault
+
+Daily/
+
+Projects/
+
+Research/
+
+Links/
+
+Inbox/
+```
+
+Because it's Git-backed, every device stays synchronized.
+
+---
+
+## Community plugins
+
+Useful plugins to mention:
+
+### Daily Notes
+
+For maintaining a daily journal or work log.
+
+---
+
+### Periodic Notes
+
+Weekly, monthly, yearly notes.
+
+---
+
+### Calendar
+
+Quick navigation between daily notes.
+
+---
+
+### Git (optional)
+
+If someone doesn't want to use your Termux automation, the Obsidian Git plugin is an alternative.
+
+Your approach is nicer because it works independently of the Obsidian app and can run even when Obsidian isn't open.
+
+---
+
+# Future improvements
+
+Because everything is already reachable over SSH, it's easy to extend the setup.
+
+Examples:
+
+* AI agent managing Downloads
+* AI organizing screenshots
+* AI summarizing notifications
+* Automatic Git sync for multiple repositories
+* SMS automation
+* Clipboard synchronization
+* Phone as a remote development node
+* Scheduled backups
+* Triggering scripts from your laptop or VPS
+* File cleanup and organization
+* Camera or sensor automation via `termux-api`
+
+---
